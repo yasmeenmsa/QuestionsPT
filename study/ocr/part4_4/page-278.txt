@@ -1,0 +1,103 @@
+=== PAGE 278 LEFT ===
+Exam T
+PTEXAM THREE: QUESTION 159
+A physical therapist completes a cranial nerve assessment on
+patient with a suspected neurological injury by using a tongue
+depressor. Which cranial nerves are MOST commonly assessed using
+this tool?
+
+1. IX
+
+2. IX,X
+
+3. X, Xl
+
+4. XI,
+
+Correct Answer: 2 (O’Sullivan p. 101)
+
+The cranial nerves refer to twelve pairs of nerves that have their
+
+origin in the brain. The majority of cranial nerves contain both
+
+sensory and motor fibers, however, there are several exceptions
+including the oculomotor and trochlear nerves.
+
+1. Cranial nerve is assessed with sweet and salty
+substances or testing of selected muscles involved in facial
+expressions. Cranial nerve is assessed
+by distinguishing objects by taste or by assessing the gag
+reflex with a tongue depressor.
+
+2. Cranial nerve is assessed by distin-
+guishing objects by taste or by assessing the gag reflex with
+a tongue depressor. Cranial nerve X-vagus is assessed by
+assessing the gag reflex with a tongue depressor.
+
+3. Cranial nerve X-vagus is assessed by assessing the gag re-
+flex with a tongue depressor. Cranial nerve is
+assessed by applying manual resistance after the patient
+shrugs the shoulders.
+
+4. Cranial nerve is assessed by applying manual
+resistance after the patient shrugs the shoulders. Cranial
+nerve is assessed by asking the patient to
+protrude the tongue.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Physical Therapy Examination
+
+p. 256-258
+=== PAGE 278 RIGHT ===
+HREE Answer Key CHAPTER 12 1145
+PTEXAM THREE: QUESTION 160
+A physical therapist critically analyzes the methodology used in
+published research study. Which type of probability sample would
+result in the GREATEST degree of sampling error?
+
+1. Simple random
+
+2. Systematic
+
+3. Cluster
+
+4. Stratified random
+
+Correct Answer: 3 (Portney p. 152)
+
+Cluster sampling involves successive random sampling of a series
+
+of units in the population. Cluster sampling is often utilized when
+
+a researcher is unable to know all elements in the population in
+
+advance.
+
+1. A simple random sample is a type of probability sample
+where every element of the population has an equal chance
+of being selected for the sample.
+
+2. A systematic sample is a type of probability sample where
+elements are chosen from lists of population members using
+specified intervals, such as every 4th element.
+
+3. A cluster sample is a probability sample in which large
+subgroups (clusters) are randomly selected first, and then
+smaller units are selected from the clusters. Because the
+technique requires two or more samples to be drawn,
+each sample is subject to sampling error, potentially
+compounding the accuracy of the final sample.
+
+4. A stratified random sample is a type of probability sample
+in which elements of the population are chosen at random
+from homogenous groups based on some characteristic.
+Organizing elements into homogenous groups before
+selection decreases the sampling error.
+
+System: Non-Systems
+
+Content Outline: Safety and Protection; Professional
+
+Responsibilities; Research
+Level 1 p. 834

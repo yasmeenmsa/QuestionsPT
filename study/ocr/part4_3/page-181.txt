@@ -1,0 +1,114 @@
+=== PAGE 181 LEFT ===
+1048 Unit 3 Examinations Answer
+PTEXAM TWO: QUESTION 157
+A physical therapist would like to minimize the likelihood of
+burn when using iontophoresis. Which action would be the MOST
+consistent with the therapist’s objective?
+
+1. Increase the size of the cathode relative to the anode
+
+2. Decrease the space between the electrodes
+
+3. Increase the current intensity
+
+4. Decrease the moisture of the electrodes
+
+Correct Answer: 1 (Prentice p. 185)
+
+Current density (mA/cm?) is calculated by taking the current
+
+amplitude (mA) and dividing by the surface area (cm?). Greater
+
+current density will result in an increased risk of an electrochemical
+burn.
+
+1. Increasing the size of the cathode relative to the anode
+serves to decrease current density and therefore reduces
+the probability of a burn when using iontophoresis. The
+cathode refers to the negatively charged electrode in
+direct current system and the anode refers to the positively
+charged electrode. The accumulation of positively charged
+ions in a small area creates an alkaline reaction that is more
+likely to create tissue damage. As a result, it is desirable to
+increase the size of the cathode.
+
+2. Decreasing the space between the electrodes decreases the
+surface area and therefore increases current density resulting
+in an increased risk of an electrochemical burn.
+
+3. Increasing the current intensity will increase the force and
+speed of propulsion of the ions and increase ion uptake. The
+result of this is increased current density and an increased
+risk of an electrochemical burn.
+
+4. Commercially produced electrodes most commonly used
+with iontophoresis have a small chamber covered by
+semipermeable membrane which houses the ionized
+solution. This type of electrode eliminates the need to soak
+a more traditional electrode in water or saline and instead is
+simply self-adherent.
+
+System: Non-Systems
+
+Content Outline: Equipment, Devices, and Technologies;
+
+Therapeutic Modalities
+Level 2 p. 749-751
+=== PAGE 181 RIGHT ===
+PTEXAM TWO: QUESTION 158
+
+A physical therapist reviews a patient coverage form that lists the
+following parameters used during a recent ultrasound treatment:
+1.5 pulsed 20%, 1 MHz, 6 minutes. If the objective of the
+ultrasound treatment was to increase tissue temperature, what
+parameter would be the MOST critical for the therapist to alter?
+
+1. Time
+
+2. Duty cycle
+
+3. Frequency
+
+4. Intensity
+
+Correct Answer: 2 (Cameron p. 190) =a
+
+Physical therapists must select specific parameters when using
+
+ultrasound based on the desired physiological effect. Failure to
+
+select the correct parameters will minimize the effectiveness of
+the session and could potentially jeopardize patient safety in
+extreme cases.
+
+1. The duration of the ultrasound is an important parameter,
+however, it is typically determined based on the size of the
+area to be treated and not by the desired increase in tissue
+temperature.
+
+2. Duty cycle is defined as the ratio of the on time to the total
+time. When ultrasound is used in a pulsed mode with
+20% or lower duty cycle, the heat produced during the on
+time of the cycle is dispersed during the off time and as
+result there is no measurable net increase in temperature.
+To increase tissue temperature it would be necessary to
+significantly increase the duty cycle or use a continuous
+mode.
+
+3. The frequency of ultrasound selected primarily determines
+the depth of penetration. A frequency setting of 1 MHz is
+used for heating of deeper tissues (up to five centimeters).
+A frequency setting of 3 MHz produces a more rapid heating
+with a depth of penetration of less than two centimeters.
+
+4. Intensity for continuous ultrasound is normally set between
+0.5 to 2.0 W/cm? for thermal effects. Pulsed ultrasound is
+normally set between 0.5 to 0.75 W/cm? with a 20% duty
+cycle for nonthermal effects.
+
+System: Non-Systems
+
+Content Outline: Equipment, Devices, and Technologies;
+
+Therapeutic Modalities
+Level 2 OD p. 728-731

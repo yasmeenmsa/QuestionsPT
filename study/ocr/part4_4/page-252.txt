@@ -1,0 +1,102 @@
+=== PAGE 252 LEFT ===
+Exam T
+PTEXAM THREE: QUESTION 108
+The measurement of blood pressure with an aneroid
+sphygmomanometer is said to have concurrent validity if the
+pressures measured by the sphygmomanometer are equal to the
+pressures measured at the same time by which of the following
+devices?
+
+1. Anelectrocardiogram
+
+2. transducer inserted in the artery
+
+3. sphygmomanometer
+
+4. A pulse oximeter
+
+Correct Answer: 2 (Portney p. 103)
+
+Concurrent validity is demonstrated when the measurement to
+
+be validated and a “gold standard” are measured at relatively the
+
+same time so that they both reflect the same incident or behavior.
+
+1. Since the electrocardiogram does not measure blood
+pressure, it could not provide evidence of the concurrent
+validity of a measurement of blood pressure.
+
+2. For blood pressure measured by an aneroid sphygmo-
+manometer to have concurrent validity, the systolic and
+diastolic pressures would have to be similar to the pressures
+measured simultaneously by another instrument considered
+to be the “gold standard.” A pressure transducer inserted in
+the patient’s artery provides a direct and precise measure-
+ment of blood pressure.
+
+3. Like the aneroid sohygmomanometer, a mercury sphygmo-
+manometer provides an indirect measure of blood pressure.
+The device would not be nearly as accurate as a pressure
+transducer inserted directly in the artery.
+
+4. Since a pulse oximeter does not measure blood pressure, it
+could not provide evidence of the concurrent validity of
+measurement of blood pressure.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Physical Therapy Examination
+
+Level 2 p. 833-834
+=== PAGE 252 RIGHT ===
+HREE Answer Key CHAPTER 12 1119
+PTEXAM THREE: QUESTION 109
+A physical therapist reviews the medical chart of a male patient prior
+to initiating airway clearance techniques. The patient’s cell counts
+are as follows: hematocrit 44%, white blood cells
+platelets hemoglobin level 15 gm/dL. Which blood
+test value suggests that chest percussion for airway clearance is
+contraindicated?
+
+1. Hematocrit
+
+2. White blood cells
+
+3. Platelets
+
+4. Hemoglobin
+
+Correct Answer: 3 (Paz p. 179)
+
+Certain blood values may influence the physical therapist’s choice
+
+of interventions and goals for the treatment session. The platelet
+
+value is significantly below the normal value and would therefore
+result in percussion being contraindicated.
+
+1. The hematocrit is within the normal range for males (39-
+46%).
+
+2. White blood cell count is within the normal range of 3.5-9.1
+x
+
+3. The platelet count is well below the normal range of
+With a platelet count of or
+less, the patient is thrombocytopenic and would be placed
+on thrombocytopenic precautions until the platelet count
+returns to normal. These precautions include restricting
+chest percussion due to the increased risk of bleeding.
+Alternative chest physical therapy techniques may include
+coughing, deep breathing exercises, and using an incentive
+spirometer.
+
+4. The hemoglobin is within the normal range for males (13.3-
+16.2 gm/dL).
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Interventions
+
+Level 2 p. 405, 422

@@ -1,0 +1,76 @@
+=== PAGE 241 LEFT ===
+SCENARIO
+QUESTIONS 87-90
+Setting: Acute care hospital
+Gender: Female
+Age: 66 years
+Presenting Problem/Current Condition
+Cerebrovascular accident five days ago
+Medical History
+Transient ischemic attack
+Osteoporosis
+Hypercholesterolemia
+Other Information
+Smoker for more than 30 years
+Computed tomography identified occlusion of the middle
+cerebral artery
+Meds: Crestor (rosuvastatin)
+Physical Therapy Examination(s)
+Unilateral facial drooping
+Slightly slurred speech; able to produce words and
+sentences, difficulty understanding questions and
+directions
+Strength: 3/5 globally on the left side of the body, 5/5
+strength globally on the right side of the body
+Limited ability to stand due to significantly impaired
+balance
+Physical Therapy Plan of Care
+None; first visit
+Notes
+SCOREBUILDERS
+=== PAGE 241 RIGHT ===
+PTEXAM THREE: QUESTION 87
+Based on the imaging results, which of the following brain structures
+would MOST likely be ischemic?
+
+1. Occipital cortex
+2. Medulla oblongata
+3. Cerebellum
+4. Basal ganglia
+Correct Answer: 4 (Goodman Pathology p. 1472)
+Blood supply is specific to particular areas within the brain. When
+an artery sustains damage via occlusion or hemorrhage, there
+is a specific pattern of disability that will occur. The extent of
+disability is determined by the extent of occlusion, area of the
+brain involved, availability of collateral circulation to the affected
+area of the brain, and if the involved artery produces unilateral or
+bilateral damage.
+
+1. Blood supply to the occipital cortex is primarily provided by
+the posterior cerebral artery. Occlusion of this artery can lead
+to visual agnosia, homonymous hemianopsia, and cortical
+blindness.
+
+2. Blood supply to the medulla oblongata is primarily provided
+by the posterior inferior cerebellar artery, which is a branch
+off of the vertebral-basilar artery. Occlusion of this artery can
+lead to lateral medullary syndrome.
+
+3. Blood supply to the cerebellum is primarily provided by
+various branches of the vertebral-basilar artery (i.e., posterior
+inferior cerebellar, anterior inferior cerebellar, and superior
+cerebellar arteries). Occlusion of these arteries can lead to
+vertigo, vomiting, headache, and ataxia.
+
+4. Blood supply to the basal ganglia is primarily provided by
+the middle cerebral arteries. Occlusion of the right middle
+cerebral artery can lead to aphasia, apraxia, contralateral
+weakness and sensory loss, impaired spatial relations, and
+impaired body schema.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+OD p. 250-251

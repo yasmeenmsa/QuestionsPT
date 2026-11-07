@@ -1,0 +1,120 @@
+=== PAGE 172 LEFT ===
+PTEXAM TWO: QUESTION 139
+
+A physical therapist searches the literature to find an appropriate
+cardiovascular screening test to identify individuals with known
+cardiovascular disease who should have a medical examination
+before starting an exercise program. The therapist should choose
+screening test that has which of the following characteristics?
+
+1. High positive predictive value
+
+2. Low positive predictive value
+
+3. High discriminant validity
+
+4. High internal consistency
+
+Correct Answer: 1 (Portney p. 622)
+
+To be clinically useful, a screening test should be efficient to use
+
+and yield accurate responses. The accuracy of the screening test
+
+is assessed by its predictive value.
+
+1. A positive predictive value estimates the probability that
+a person who tests positive on the screening test actually
+has the condition the screening test is intended to detect.
+test with a high positive predictive value provides a strong
+estimate of the actual number of patients who have the
+condition.
+
+2. A screening test with a low positive predictive value would
+not be clinically useful as it would not accurately identify
+individuals with the condition or disease.
+
+3. Discriminant validity is a way to assess the construct validity
+of a measurement. When measurements that are believed
+to assess different characteristics are shown to be different,
+or have a low correlation, then one measurement is said
+to have discriminant validity with respect to the second
+measurement. This is not the most important attribute for
+screening test.
+
+4. Internal consistency is a form of reliability of a measurement,
+assessing the degree to which a set of items in an instrument
+all measure the same trait. This is not the most important
+attribute for a screening test.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Physical Therapy Examination
+
+OD p. 842
+=== PAGE 172 RIGHT ===
+TWO Answer Key CHAPTER 11 1039
+PTEXAM TWO: QUESTION 140
+A physical therapist uses repeated contractions to strengthen the
+quadriceps of a patient who fails to exhibit the desired muscular
+response throughout a portion of the range of motion. Which of
+the following methods is the MOST appropriate when applying this
+proprioceptive neuromuscular facilitation (PNF) technique?
+
+1. Place the extremity into a shortened range within the pattern
+
+2. Apply at the point where the desired muscular response
+begins to diminish
+
+3. Apply at the end of the available range of motion
+
+4. Apply a maximal contraction of the antagonistic muscle group
+
+Correct Answer: 2 (Sullivan p. 71)
+
+Repeated contractions should be applied at the point where
+
+the contraction begins to diminish. The technique utilizes an
+
+isometric contraction followed by subsequent manual stretching
+and resisted isotonic movement. Repeated contractions assist
+
+with enhancing motor neuron recruitment and strengthening of
+
+muscle or group of muscles.
+
+1. Hold-relax active movement is a technique to improve
+initiation of movement to muscles tested at 1/5 or less. An
+isometric contraction is performed once the extremity is
+passively placed into a shortened range within the pattern.
+Overflow and facilitation may be used to assist with the
+contraction. Upon relaxation, the extremity is moved into
+lengthened position with a quick stretch. The patient then
+returns the extremity to the shortened position through an
+isotonic contraction.
+
+2. Repeated contractions, alternating isometrics, resisted
+progression, and timing for emphasis are all examples of
+PNF techniques that are applied with the goal and purpose
+of increasing strength.
+
+3. Hold-relax is a technique that applies an isometric contraction
+at the end of available range to increase range of motion. The
+contraction is facilitated for all muscle groups at the limiting
+point in the range. Relaxation occurs and the extremity
+moves through the newly acquired range to the next point of
+limitation until there are no further gains in range of motion.
+
+4. Contract-relax is a technique that applies a maximal
+contraction of the antagonistic muscle group as the
+extremity reaches the point of limitation. The therapist resists
+movement for five to ten seconds with relaxation to follow.
+The technique is repeated until there are no further gains in
+range of motion.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Interventions
+
+Level 2 p. 303
+e SCOREBUILDERS

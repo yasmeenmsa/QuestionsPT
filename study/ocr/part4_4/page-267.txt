@@ -1,0 +1,113 @@
+=== PAGE 267 LEFT ===
+1134 Unit 3 Examinations Answer Ke
+PTEXAM THREE: QUESTION 137
+A physical therapist employed in a busy outpatient orthopedic clinic
+attempts to determine a schedule for calibration and maintenance
+of an ultrasound unit. Which of the following factors is the MOST
+important for the therapist to consider when determining an
+appropriate schedule?
+
+1. Beam nonuniformity ratio
+
+2. Frequency of use
+
+3. Cost associated with calibration and maintenance
+
+4. Availability of qualified personnel to inspect the unit
+
+Correct Answer: 2 (Prentice p. 419)
+
+Electrical equipment must be calibrated and maintained by
+
+qualified personnel on a regular schedule consistent with the
+
+manufacturer’s recommendations. The regular schedule, once
+established, can be modified based on variables such as increased
+frequency of use or reports of faulty performance.
+
+Beam nonuniformity ratio (BNR) refers to the ratio of
+intensity of the highest peak to the average intensity of all
+peaks. The BNR is determined by the intrinsic biophysical
+properties of the piezoelectric transducer. The BNR of an
+ultrasound device would not be a factor in determining
+calibration and maintenance schedule.
+
+2. The frequency of use of an ultrasound device is extremely
+important when determining a schedule for calibration and
+maintenance. Ultrasound units used frequently may be
+calibrated several times a year, while a unit used sparingly
+would likely warrant a longer interval.
+
+3. The cost associated with calibration and maintenance of
+the ultrasound unit should not be a factor in establishing
+calibration and maintenance schedule. Relying on a variable
+such as cost implies that when there are ample resources
+available calibration and maintenance take place and when
+resources are not available calibration and maintenance can
+be deferred.
+
+4. Theavailability of qualified personnel the ultrasound
+unit would not be a factor in determining a calibration and
+maintenance schedule. If appropriate personnel are not
+available within the health care organization, there are
+variety of external companies who can provide the necessary
+service.
+
+System: Non-Systems
+
+Content Outline: Equipment, Devices, and Technologies;
+
+Therapeutic Modalities
+Level 3
+=== PAGE 267 RIGHT ===
+PTEXAM THREE: QUESTION 138
+
+A physical therapist inspects a wound that has large quantities of
+exudate requiring frequent dressing changes. If the therapist applies
+a dressing that cannot handle the amount of exudate present, which
+of the following outcomes is the MOST likely?
+
+1. Maceration
+
+2. Granulation
+
+3. Epithelialization
+
+4. Infection
+
+Correct Answer: 1 (Sussman p. 376)
+
+Transparent film is an example of a type of dressing that would
+
+be unable to handle a significant amount of exudate. Conversely,
+
+an alginate dressing would be a better choice for a wound with
+
+a significant amount of exudate since the dressing is highly
+
+permeable and would therefore tend to absorb the exudate.
+
+1. Maceration refers to a softening of connective tissue
+fibers due to excessive moisture. The result is a loss of
+pigmentation and a wound that is highly susceptible to
+breakdown or enlargement.
+
+2. Granulation refers to perfused, fibrous connective tissue that
+replaces a fibrin clot in a healing wound. The tissue is highly
+vascular and fills the defects of full-thickness wounds.
+
+3. Epithelialization refers to the process of epidermal resurfacing
+and appears as pink or red skin.
+
+4. Signs and symptoms of infection include the production of
+pus, redness, pain, and swelling. More generalized symptoms
+of infection may include fever, chills, and an increased pulse
+rate. Laboratory values associated with infection include an
+increased erythrocyte sedimentation rate and white blood
+cell count.
+
+System: Other Systems
+
+Content Outline: Interventions
+
+Level 2

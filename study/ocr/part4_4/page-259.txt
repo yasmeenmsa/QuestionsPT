@@ -1,0 +1,77 @@
+=== PAGE 259 LEFT ===
+126 Unit 3 Examinations Answer Ke
+PTEXAM THREE: QUESTION 122
+A physical therapist prepares to administer iontophoresis over the
+anterior surface of a patient’s knee. The therapist would like to keep
+the current density low in order to avoid skin irritation. Which of the
+listed parameters would BEST accomplish the therapist’s objective?
+1. Current amplitude of 4 mA; electrode with an area of 12 cm?
+2. Current amplitude of 4 mA; electrode with an area of 4 cm?
+3. Current amplitude of 3 mA; electrode with an area of 6 cm?
+4. Current amplitude of 3 mA; electrode with an area of 4 cm?
+Correct Answer: 1 (Cameron p. 294)
+The current density may be altered either by increasing or
+decreasing current intensity or by changing the size of the
+electrode. Current density with iontophoresis equals current
+amplitude (mA) divided by electrode size Failure to select
+appropriate treatment or failure to monitor the patient’s response
+to treatment creates an unnecessary safety risk.
+1. Current density 4 mA 12 cm? .33 mA/cm?
+2. Current density 4 mA 4 mA/cm?
+3. Current density 3 mA 6 cm? .50 mA/cm?
+4. Current density 3 mA 4 cm? .75 mA/cm?
+System: Non-Systems
+Content Outline: Equipment, Devices, and Technologies;
+Therapeutic Modalities
+tevei2 p.749-751
+SCOREBUILDERS
+=== PAGE 259 RIGHT ===
+PTEXAM THREE: QUESTION 123
+
+A physical therapist examines a patient who has rheumatoid
+arthritis. During the examination, the therapist observes increased
+flexion at the proximal interphalangeal joints and hyperextension
+at the metacarpophalangeal and distal interphalangeal joints.
+
+The therapist would MOST likely document which of the following
+deformities in the medical record?
+
+1. Boutonniere deformity
+2. Mallet finger
+3. Swan neck deformity
+4. Ulnar drift
+Correct Answer: 1 (Magee p. 495)
+There are a number of common hand and finger deformities that
+are often associated with specific medical diagnoses. Physical
+therapists should be familiar with the clinical presentation of these
+deformities. Boutonniere deformity, swan neck deformity, and
+ulnar drift are commonly observed in patients with rheumatoid
+arthritis.
+
+1. Boutonniere deformity is characterized by extension of the
+metacarpophalangeal and distal interphalangeal joints and
+flexion of the proximal interphalangeal joint. The deformity
+is caused by a rupture of the central tendinous slip of the
+extensor hood.
+
+2. Mallet finger is characterized by the distal phalanx of the
+finger resting in a flexed position. The deformity is caused by
+a rupture or avulsion of the extensor tendon.
+
+3. Swan neck deformity is characterized by flexion at the
+distal interphalangeal joints and hyperextension of the
+proximal interphalangeal joints. The deformity is caused by
+a contraction of the intrinsic muscles or tearing of the volar
+plate.
+
+4. Ulnar drift is characterized by ulnar deviation of the digits
+due to weakening of the capsuloligamentous structures of
+the metacarpophalangeal joints and the accompanying
+effect on the extensor communis tendons.
+
+System: Musculoskeletal System
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+OD p. 133-134

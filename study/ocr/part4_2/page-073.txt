@@ -1,0 +1,92 @@
+=== PAGE 73 LEFT ===
+SCENARIO
+QUESTIONS 133-135
+Setting: Outpatient clinic
+Gender: Male
+Age: 52 years
+Presenting Problem/Current Condition
+Spinal stenosis (lumbar)
+Increased back pain over the last three months
+Periodic tingling and cramping in the right leg
+Medical History
+Infrequent back pain over the last two years
+MRI: advanced disk desiccation L3-L4 and L4-L5;
+moderate central canal stenosis L3-L4
+Other Information
+Height: 70 inches
+Weight: 200 Ibs
+Formal exercise activities have gradually become less
+frequent and less intense due to pain
+Physical Therapy Examination(s)
+Forward stooped posture
+Diminished lower extremity strength
+Extended periods (greater than 10 minutes) of standing
+increase symptoms
+Pain: 8/10 with activity, 3/10 at rest
+Physical Therapy Plan of Care
+Strengthening
+Range of motion
+Postural training
+Endurance activities
+Mechanical traction
+Pain management strategies
+Notes
+SCOREBUILDERS
+=== PAGE 73 RIGHT ===
+PTEXAM ONE: QUESTION 133
+Which examination finding would be considered the MOST
+confirmatory for the given diagnosis?
+
+1. Back symptoms increase with spinal extension overpressure
+
+2. Back and leg symptoms increase with spinal extension
+overpressure
+
+3. Back symptoms increase with spinal flexion overpressure
+
+4. Back and leg symptoms increase with spinal flexion
+overpressure
+
+Correct Answer: 2 (Dutton p. 1361)
+
+Lumbar spinal stenosis refers to a narrowing of the spinal canal
+
+in the lumbar spine. Symptoms typically result from mechanical
+
+compression on either the spinal cord or exiting nerve roots and
+may be further exacerbated by bony degeneration or instability.
+
+Structural changes may include degeneration of the vertebral
+
+segments, disk herniation, osteophyte formation, and hypertrophy
+
+of structures such as the ligamentum flavum.
+
+1. Patients with spinal stenosis may experience back symptoms
+with extension overpressure due to the combination of
+forced compression and the positional narrowing of the
+spinal column. However, the combination of back and leg
+symptoms would provide stronger confirmatory evidence of
+spinal stenosis.
+
+2. Patients with spinal stenosis often experience back and
+leg symptoms with extension overpressure due to the
+combination of forced compression and the positional
+narrowing of the spinal column. This pattern of symptoms is
+classically associated with spinal stenosis.
+
+3. Patients with spinal stenosis may experience back symptoms
+with extension overpressure, but are far less likely to
+experience symptoms with flexion overpressure due to the
+positional widening of the foramen.
+
+4. Patients with spinal stenosis may experience back and leg
+symptoms with extension overpressure, but are far less likely
+to experience symptoms with flexion overpressure due to the
+positional widening of the foramen.
+
+System: Musculoskeletal System
+
+Content Outline: Physical Therapy Examination
+
+COD

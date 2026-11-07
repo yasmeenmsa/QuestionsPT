@@ -1,0 +1,77 @@
+=== PAGE 264 LEFT ===
+SCENARIO
+QUESTIONS 132-135
+Setting: Inpatient rehabilitation
+Gender: Male
+Age: 45 years
+Presenting Problem/Current Condition
+Guillain-Barre syndrome diagnosed ten days ago
+Medical History
+7-day hospitalization
+Lumbar puncture to confirm diagnosis
+Other Information
+Patient uses manual wheelchair with adaptive handrims
+Spouse trained during acute care hospitalization to
+provide physical assistance to patient for bed mobility
+and squat pivot transfers
+Physical Therapy Examination(s)
+Poor (2/5) strength in the lower extremities
+Absent deep tendon reflexes
+Lower extremity paresthesias
+Moderate assist with bed mobility including rolling and
+supine to sit
+Moderate assist with sit to stand transfer in parallel bars
+Physical Therapy Plan of Care
+None; first visit
+Notes
+=== PAGE 264 RIGHT ===
+HREE Answer Key CHAPTER 12 1131
+PTEXAM THREE: QUESTION 132
+Which of the following findings would MOST likely have been
+identified in the cerebrospinal fluid sample to confirm the medical
+diagnosis?
+
+1. Elevated erythrocyte levels
+2. Elevated protein levels
+3. Low gamma globulin levels
+4. Low glucose levels
+Correct Answer: 2 (Goodman Pathology p. 1655)
+Lumbar puncture is an invasive procedure that is used to diagnose
+problems with the spine or brain. The procedure is performed by
+inserting a needle into the subarachnoid space in the lumbar spine
+and drawing cerebrospinal fluid (CSF) out to be tested. Lumbar
+puncture can be used to diagnose conditions such as encephalitis,
+meningitis, and Guillain-Barre syndrome.
+
+1. should have no red blood cells (i.e., erythrocytes)
+and typically have low numbers of mononuclear leukocytes.
+High levels of erythrocytes in the CSF are a sign of bleeding
+or the result of a traumatic lumbar puncture.
+
+2. Guillain-Barre syndrome is a temporary inflammation and
+demyelination of the myelin sheaths of peripheral nerves.
+CSF samples in patients diagnosed with Guillain-Barre
+syndrome typically contain high protein levels (e.g., albumin).
+The increase in protein is associated with the widespread
+inflammation of the nerve roots. Elevated protein levels
+without an increase in leukocytes is the most common finding
+in CSF samples of patients with Guillain-Barre syndrome.
+
+3. Gamma globulin is a type of blood protein produced by
+lymphocytes and plasma cells during an immune response,
+often referred to as immunoglobulins. Low levels of
+gamma globulin would not be expected with Guillain-Barre
+syndrome. However, elevated levels of gamma globulin are
+commonly found in the CSF of patients diagnosed with
+multiple sclerosis.
+
+4. Low glucose levels in CSF samples may be due to hypogly-
+cemia, bacterial infection (e.g., meningitis, tuberculosis) or
+certain other types of meningitis.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+Level 1 p. 286-287, 348-349

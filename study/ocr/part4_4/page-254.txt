@@ -1,0 +1,105 @@
+=== PAGE 254 LEFT ===
+Exam T
+PTEXAM THREE: QUESTION 112
+A physical therapist reviews a research study that examines knee
+flexion range of motion two weeks following arthroscopic surgery.
+Assuming knee flexion range of motion is a normally distributed
+variable, what percentage of patients in the population would
+achieve a goniometric measurement value between the mean and
+one standard deviation above the mean?
+
+1. 14%
+
+2. 34%
+
+3. 48%
+
+4. 68%
+
+Correct Answer: 2 (Portney p. 399)
+
+Because of the standard properties of the normal distribution, it
+
+is possible to determine the proportional areas under the curve
+
+represented by the standard deviation. 34.13% of the area under
+
+the curve of a normal distribution is bounded by the mean and 1
+
+standard deviation above or below the mean.
+
+1. 14% is the approximate area under the normal curve between
+land 2 standard deviations above or below the mean.
+
+2. 34% is the approximate area under the normal curve bound-
+ed by 1 standard deviation above or below the mean.
+
+3. 48% is the approximate area under the normal curve bounded
+by 2 standard deviations above or below the mean.
+
+4. 68% is the approximate area under the normal curve bounded
+by 1 standard deviation below the mean and 1 standard
+deviation above the mean.
+
+System: Non-Systems
+
+Content Outline: Safety and Protection; Professional
+
+Responsibilities; Research
+p. 839-840
+=== PAGE 254 RIGHT ===
+HREE Answer Key CHAPTER 12 1121
+PTEXAM THREE: QUESTION 113
+An entry in a patient’s medical record indicates that the patient has
+recently received viscosupplementation. This type of procedure
+is MOST commonly performed to treat which of the following
+conditions?
+
+1. Arrhythmias
+
+2. Bursitis
+
+3. Osteoarthritis
+
+4. Spasticity
+
+Correct Answer: 3 (Ciccone p. 251)
+
+Viscosupplementation is a technique in which hyaluronan is
+
+injected into a patient’s joint. Hyaluronan is a polysaccharide that
+
+restores the normal viscosity of the synovial fluid and helps to
+restore the lubricating properties of synovial fluid within that joint.
+
+1. An arrhythmia is a cardiac condition characterized by the
+cardiac cycle being irregular in either rate or rhythm. Ar-
+rhythmias are typically treated with the use of antiarrhythmic
+agents (e.g., beta blockers, calcium channel blockers).
+
+2. Bursitis is a condition characterized by the inflammation of
+bursa, commonly in the hip, knee, shoulder or elbow. Bursitis
+is typically treated conservatively with rest, ice, physical
+therapy, and anti-inflammatory drugs. In cases that do not
+respond to conservative treatment, a steroid injection may
+be necessary.
+
+3. Osteoarthritis is a condition characterized by the loss of
+articular cartilage within a joint secondary to mechanical
+stresses. Viscosupplementation is commonly used in the
+treatment of osteoarthritis as the improved lubrication
+within the joint can help reduce joint stresses and reduce
+the progression of cartilaginous destruction. The benefits of
+viscosupplementation are relatively transient.
+
+4. Spasticity is a symptom characterized by resistance of
+muscle to passive stretch and often occurs secondary to
+damage to the central nervous system. Spasticity is often
+treated with the use of baclofen, a medication which reduces
+the effects of spasticity through muscle relaxation.
+
+System: Musculoskeletal System
+
+Content Outline: Interventions
+
+Level 1 p. 131-132, 178-179

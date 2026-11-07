@@ -1,0 +1,78 @@
+=== PAGE 217 LEFT ===
+SCENARIO
+QUESTIONS 41-45
+Setting: Outpatient clinic
+Gender: Female
+Age: 47 years
+Presenting Problem/Current Condition
+Asthma
+Periodic attacks of varying severity result in wheezing,
+chest tightness, and shortness of breath
+Medical History
+Allergic to pollen and animal dander
+Other Information
+Meds: Alvesco (ciclesonide)
+Physical Therapy Examination(s)
+Persistent cough, often productive
+Mediate percussion
+Dyspnea at rest or with minimal activity
+Six-Minute Walk Test administered to assist with exercise
+prescription
+Physical Therapy Plan of Care
+Diaphragmatic breathing
+Endurance training
+Patient education
+Notes
+SCOREBUILDERS
+=== PAGE 217 RIGHT ===
+PTEXAM THREE: QUESTION 41
+Which of the following cardiovascular side effects is the MOST
+common with use of the prescribed medication?
+
+1. Palpitations
+
+2. Arrhythmias
+
+3. Increased blood pressure
+
+4. Tachycardia
+
+Correct Answer: 3 (Ciccone p. 408)
+
+Increased blood pressure or hypertension is a side effect that is
+
+associated with heavy or prolonged use of corticosteroids (also
+
+known as glucocorticoids). Alvesco (ciclesonide) is a corticosteroid
+that works by decreasing swelling and irritation in the airways to
+allow for easier breathing.
+
+1. A palpitation is a sensation in which a person is aware
+of an irregular, hard or fast heartbeat that may skip or
+beat irregularly. The word palpitation is sometimes used
+synonymously with arrhythmia. However, a palpitation may
+or may not be caused by an arrhythmia. Many palpitations are
+benign, but the underlying cause is important to diagnose.
+
+2. An arrhythmia is defined as a significant deviation from
+normal sinus rhythm. Many medications have potential side
+effects of arrhythmias including some cardiac medications,
+tricyclic antidepressants, and minerals such as calcium.
+
+3. Corticosteroid use can increase blood pressure secondary
+to the sodium and water retention properties of the
+corticosteroid. Long-term use of corticosteroids must be
+closely monitored due to the stated adverse effects.
+
+4. Tachycardia refers to a heart rate in excess of 100 beats per
+minute in an adult. It may occur normally in response to fever,
+exercise or excitement. Many substances have potential side
+effects of tachycardia including alcohol, caffeine, nicotine,
+and certain anti-anxiety and cardiac medications.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+OD

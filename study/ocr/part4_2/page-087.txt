@@ -1,0 +1,101 @@
+=== PAGE 87 LEFT ===
+954 Unit 3 Examinations Answer Ke
+PTEXAM ONE: QUESTION 160
+If the forced expiratory volume in one second (FEV)) test is negative
+for airway obstruction in 99 percent of individuals without lung
+disease, then the measurement of FEV; BEST represents which of the
+following research terms?
+
+1. Sensitive
+2. Specific
+3. Reliable
+4. Valid
+Correct Answer: 2 (Portney p. 620)
+The validity of a diagnostic test, such as the FEV; test, is evaluated
+by its accuracy in assessing the presence or absence of a target
+condition such as airway obstruction. A test is considered to be
+specific when the test is negative in persons who do not have the
+disease. A highly specific test will rarely be positive when a person
+does not have the disease.
+
+1. Sensitivity is the probability of obtaining a positive test
+among individuals who have the disease. In this example,
+neither condition was met: the test result was negative for
+airway obstruction and the individuals tested did not have
+lung disease.
+
+2. Specificity is the probability of obtaining a negative test
+among individuals without the disease (who should test
+negative). Since 99 of 100 individuals without lung disease
+had a negative FEV; test for airway obstruction, the test is
+highly specific.
+
+3. Reliability refers to the extent to which a test or measurement
+is consistent or yields the same result on repeated trials.
+In this example, there is no indication that the FEV, was
+administered more than once, therefore no estimate of
+reliability is possible.
+
+4. Validity refers to the degree to which a test or measurement
+accurately reflects or assesses the specific concept the
+Clinician is attempting to measure. Validity is concerned with
+the success at measuring what was set out to be measured.
+In this example, the data does not provide useful information
+for assessing the extent to which FEV; is a valid way to
+identify airway obstruction.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Physical Therapy Examination
+
+Level 1 OB p. 842
+=== PAGE 87 RIGHT ===
+PTEXAM ONE: QUESTION 161
+
+A physical therapist applies an automated external defibrillator
+(AED) to a patient in cardiac arrest. In addition to ventricular
+fibrillation, what condition is MOST likely to be identified and treated
+with the AED?
+
+1. Atrial fibrillation
+2. Premature atrial contractions
+3. Ventricular tachycardia
+4. First degree ventricular heart block
+Correct Answer: 3 (Le Baudour p. 205)
+An AED is a portable electronic device that automatically
+diagnoses the potentially life-threatening cardiac arrhythmias of
+ventricular fibrillation and ventricular tachycardia. The electrical
+current potentially stops the abnormal rhythm and allows the
+heart to begin to beat normally by administering an electrical
+shock.
+
+1. Atrial fibrillation is a common arrhythmia where the atria
+are depolarized between 350 and 600 times/minute. Atrial
+fibrillation occurs in healthy hearts and in patients with
+coronary artery disease, hypertension, and valvular disease.
+
+2. Premature atrial contractions occur when an ectopic focus
+in the atrium initiates an impulse before the SA node.
+Premature atrial contractions are relatively common and
+generally benign.
+
+3. Ventricular tachycardia refers to three or more consecutive
+premature ventricular contractions occurring at a ventricular
+rate of 150 beats/minute. Ventricular tachycardia longer
+than 30 seconds is a life-threatening arrhythmia and
+requires immediate medical intervention. This type of
+abnormal heart rhythm can be recognized and potentially
+treated by an AED.
+
+4. First degree ventricular heart block is characterized by a PR
+interval that is longer than 0.2 seconds, but relatively constant
+from beat to beat. First degree ventricular heart block results
+in no associated symptoms or significant changes in cardiac
+function.
+
+System: Non-Systems
+
+Content Outline: Safety and Protection; Professional
+
+Responsibilities; Research
+Level 1 OD p. 438, 783

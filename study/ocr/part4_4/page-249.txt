@@ -1,0 +1,110 @@
+=== PAGE 249 LEFT ===
+1116 Unit 3 Examinations Answer Ke
+PTEXAM THREE: QUESTION 102
+A physician orders electromyography for a patient who has
+brachial plexus injury to objectively determine the extent of the
+pathology. Which of the following responses is the MOST indicative
+of a normal muscle at rest?
+
+1. Electrical silence
+
+2. Spontaneous potentials
+
+3. Polyphasic potentials
+
+4. Occasional motor unit potentials
+
+Correct Answer: 1 (O’Sullivan p. 172)
+
+Electromyography is a test that assesses the health of the muscles
+
+and the nerves controlling the muscles. A needle electrode is
+
+inserted through the skin into the muscle. The electrical activity
+detected by this electrode is displayed on an oscilloscope.
+
+The presence, size, and shape of the waveform (i.e., the action
+
+potential) produced on the oscilloscope provides information
+
+about the ability of the muscle to respond when the nerves are
+stimulated.
+
+1. A normally innervated muscle is electrically silent at rest.
+Once the insertion activity (caused by the trauma of needle
+insertion) resolves, there should be no action potential on
+the oscilloscope.
+
+2. Spontaneous electrical potentials, like fibrillations and
+positive sharp waves, are seen in an acutely denervated
+muscle. Fibrillations and positive sharp waves are the result
+of spontaneous discharge of a single muscle fiber.
+
+3. Polyphasic potentials are the electrical potentials from
+denervated motor unit. A motor unit that exhibits five or
+more phases is referred to as polyphasic.
+
+4. Neurapraxia is likely when occasional motor unit potentials
+occur during minimal effort muscle contractions two to three
+weeks after injury.
+
+System: Other Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+=== PAGE 249 RIGHT ===
+PTEXAM THREE: QUESTION 103
+
+A patient is examined in physical therapy following a mild traumatic
+brain injury. The physical therapist begins by observing the patient’s
+eyes and notes that the right eye is angled inward so that is rests
+closer to the midline of the face than the left eye. Which cranial
+nerve would MOST likely be affected based on the identified
+abnormality?
+
+1. Cranial nerve Il
+
+2. Cranial nerve Ill
+
+3. Cranial nerve IV
+
+4. Cranial nerve VI
+
+Correct Answer: 4 (O’Sullivan p. 151)
+
+There are several different cranial nerves that deal with functioning
+
+of the eyes. Cranial nerve II is a purely sensory nerve while cranial
+
+nerves III, lV, and VI are motor nerves that supply innervation to
+the eye muscles to allow for various eye movements.
+
+1. Cranial nerve Il, the optic nerve, is an afferent nerve that
+deals with the sense of vision. A lesion of the optic nerve
+would result in difficulty with a patient’s visual acuity.
+
+2. Cranial nerve Ill, the oculomotor nerve, is an efferent nerve
+that supplies innervation to the eye muscles which produce
+upward, downward, and medial gaze. Since the oculomotor
+nerve assists with medial gaze, a lesion of this nerve would
+tend to result in an eyeball that rests in a more lateral position.
+
+3. Cranial nerve IV, the trochlear nerve, is an efferent nerve that
+supplies innervation to the eye muscles which produce
+downward and inward gaze. Since the trochlear nerve assists
+with inward (medial) gaze, a lesion of this nerve would tend
+to result in an eyeball that rests in a more lateral position.
+
+4. Cranial nerve VI, the abducens nerve, is an efferent nerve
+that supplies innervation to the lateral rectus muscle of
+the eye, which produces lateral gaze. A lesion of this nerve
+would tend to result in an eyeball that rests ina more medial
+position since the medial rectus muscle will have a stronger
+influence than the lateral rectus muscle.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Physical Therapy Examination
+
+Level 2 OD p. 257-259

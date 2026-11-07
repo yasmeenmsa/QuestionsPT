@@ -1,0 +1,112 @@
+=== PAGE 159 LEFT ===
+1026 Unit 3 Examinations Answer
+PTEXAM TWO: QUESTION 114
+A physical therapist attempts to determine if a patient with known
+heart disease is an appropriate candidate for an exercise program.
+Which of the following findings would MOST likely exclude this
+patient from participating?
+
+1. Ejection fraction of 45%
+
+2. Uncomplicated myocardial infarction two months ago
+
+3. ST segment depression of one millimeter on an
+electrocardiogram
+
+4. Ventricular arrhythmias at rest
+
+Correct Answer: 4 (O’Sullivan p. 502)
+
+The American Association of Cardiovascular and Pulmonary
+
+Rehabilitation (AACVPR) and the American College of Physicians
+
+(ACP) have provided a framework for determining a patient’s risk
+
+of increased morbidity and mortality. Patients are classified as
+
+low, moderate or high risk based on a number of factors. These
+groups have also established guidelines for evaluating patients
+that are inappropriate for exercise.
+
+1. Normal ejection fraction is between 55% and 70%. A patient
+with an ejection fraction of 45% would be considered at
+moderate risk for increased morbidity and mortality. Though
+this patient may have decreased exercise tolerance due to
+a reduced ejection fraction, they still would be allowed to
+engage in an exercise program.
+
+2. A patient with a history of an uncomplicated myocardial
+infarction and/or cardiac surgery (e.g., angioplasty, coronary
+artery bypass graft surgery) would be classified as low risk
+for increased morbidity and mortality. Patients commonly
+engage in rehabilitation programs following myocardial
+infarction and therefore would not be excluded from exercise,
+though they may need increased monitoring by a therapist.
+
+3. A patient with ST segment depression of one millimeter on
+their electrocardiogram would be classified as moderate risk
+for increased morbidity and mortality. A patient with marked
+ST segment depression (i.e., greater than two millimeters)
+would be classified as high risk. This patient would not be
+excluded from exercise, though they may need increased
+monitoring by a therapist.
+
+4. A patient with ventricular arrhythmias at rest would be
+classified as high risk for increased morbidity and mortality.
+Additionally, the AACVPR recommends that patients with
+uncontrolled arrhythmias be excluded from exercise.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+Level 2
+=== PAGE 159 RIGHT ===
+PTEXAM TWO: QUESTION 115
+
+A physical therapist attempts to implement a formal exercise
+program for a patient who is three weeks post cardiac
+transplantation. Which of the following physiologic responses should
+the therapist MOST anticipate based on the transplantation?
+
+1. Increased resting heart rate
+2. Increased heart rate response with exercise
+3. Increased peak heart rate during exercise
+4. Increased age-predicted maximal heart rate
+Correct Answer: Resource Manual p. 629)
+The medical management of a patient following cardiac
+transplantation focuses on controlling immune system rejection
+while minimizing potential side effects. For several months after
+the transplant, the transplanted heart fails to respond normally
+to sympathetic nervous stimulation. By one year after surgery,
+approximately one-third of patients will exhibit a near normal
+heart rate response to exercise.
+
+1. The patient would likely experience an increased resting
+heart rate following cardiac transplantation because of
+the lack of parasympathetic innervation. The heart rate is
+usually greater than 80 beats per minute.
+
+2. The patient would likely experience a decreased heart rate
+response with exercise following cardiac transplantation. In
+addition, the initial increase in heart rate that accompanies
+exercise is often delayed. The abnormal heart rate response
+makes it necessary to utilize rate of perceived exertion to
+monitor exercise intensity.
+
+3. The patient would likely experience a decreased peak heart
+rate during exercise following cardiac transplantation. The
+peak heart rate in a patient after cardiac transplantation is
+approximately 150 beats per minute.
+
+4. The patient’s age-predicted maximal heart rate is a constant
+based on their chronological age and therefore would not be
+influenced by the cardiac transplantation.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Physical Therapy Examination
+
+Level 2
