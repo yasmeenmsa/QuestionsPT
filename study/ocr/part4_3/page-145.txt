@@ -1,0 +1,70 @@
+=== PAGE 145 LEFT ===
+Pa SCENARIO
+QUESTIONS 87-90
+Setting: Outpatient clinic
+Gender: Female
+Age: 33 years
+Presenting Problem/Current Condition
+De Quervain’s tenosynovitis
+Medical History
+Recent gastrointestinal distress
+Other Information
+Meds: Advil (ibuprofen)
+Currently unable to resume tennis activities
+ages 1 and 3
+Physician prescribed splint and rest to diminish pain
+Physical Therapy Examination(s)
+Pain: Numeric pain scale rating 3/10
+Palpation: Tenderness in the anatomic snuffbox
+Reports radiating pain into the thumb during ROM
+PROM of the wrist and hand is WNL
+Diminished grip strength
+Physical Therapy Plan of Care
+None; first session
+Notes
+SCOREBUILDERS
+=== PAGE 145 RIGHT ===
+PTEXAM TWO: QUESTION 87
+What muscles are MOST commonly associated with this medical
+diagnosis?
+
+1. Abductor pollicis longus and extensor pollicis longus
+
+2. Abductor pollicis brevis and extensor pollicis brevis
+
+3. Abductor pollicis longus and extensor pollicis brevis
+
+4. Abductor pollicis brevis and extensor pollicis longus
+
+Correct Answer: 3 (Dutton p. 786)
+
+De Quervain’s tenosynovitis results from an inflammatory process
+
+involving the tendons and synovium of the abductor pollicis
+
+longus and extensor pollicis brevis muscles at the base of the
+thumb. The onset is typically due to repetitive activities involving
+thumb abduction and extension.
+
+1. The abductor pollicis longus is in the first dorsal compartment
+and is associated with de Quervain’s tenosynovitis. The
+extensor pollicis longus is in the third dorsal compartment
+and is not associated with this medical condition.
+
+2. The abductor pollicis brevis is not associated with de
+Quervain’s tenosynovitis. However, the extensor pollicis
+brevis is associated with the medical condition.
+
+3. The abductor pollicis longus and extensor pollicis brevis
+are in the first dorsal compartment and are the muscles
+involved with de Quervain’s tenosynovitis.
+
+4. The abductor pollicis brevis and extensor pollicis longus are
+not associated with de Quervain’s tenosynovitis.
+
+System: Musculoskeletal System
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+OD p. 224

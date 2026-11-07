@@ -1,0 +1,100 @@
+=== PAGE 271 LEFT ===
+1138 Unit 3 Examinations Answer Ke
+PTEXAM THREE: QUESTION 145
+A patient reports significant discomfort in the lower extremity
+during an ultrasound treatment. The physical therapist believes the
+discomfort is caused by periosteal pain from the ultrasound. Which
+of the following scenarios would MOST likely be associated with the
+patient’s subjective report of discomfort?
+
+1. An.ultrasound unit with a high beam nonuniformity ratio
+
+2. unit with a low beam nonuniformity ratio
+
+3. A transducer with a large effective radiating area
+
+4. A transducer with a small effective radiating area
+
+Correct Answer: 1 (Cameron p. 173)
+
+Beam nonuniformity ratio (BNR) is the ratio between the spatial
+
+peak intensity and spatial average intensity. The higher the quality
+
+of the crystal, the lower the BNR. The BNR is derived from the
+intrinsic factors and quality of the piezoelectric crystal.
+
+1. A high beam nonuniformity ratio produces a less uniform
+beam and therefore places the patient at greater risk for
+undesirable side effects such as periosteal pain or hot spots.
+
+2. A low beam nonuniformity ratio produces a more uniform
+beam and therefore allows for greater patient comfort and
+safety.
+
+3. Large ultrasound transducers have relatively large effective
+radiating areas. Effective radiating area (ERA) refers to the
+area of the transducer that transmits ultrasound energy.
+The ERA is more relevant when considering the size of the
+transducer to utilize and the duration of treatment.
+
+4. Small ultrasound transducers have small ERAs. The ERA is
+always slightly smaller than the total size of the transducer
+head. A transducer with a small ERA would be unlikely
+to produce the described discomfort without additional
+contributing variables.
+
+System: Non-Systems
+
+Content Outline: Equipment, Devices, and Technologies;
+
+Therapeutic Modalities
+tevei2 p.728-731
+SCOREBUILDERS
+=== PAGE 271 RIGHT ===
+PTEXAM THREE: QUESTION 146
+
+A patient with a transtibial amputation displays early knee flexion
+from midstance through pre-swing. What is a possible cause for this
+deviation?
+
+1. The foot is set in neutral
+
+2. The socket is set posterior in relation to the foot
+
+3. The prosthesis is too short
+
+4. The socket is aligned in excessive flexion
+
+Correct Answer: 4 (Seymour p. 204)
+
+If the socket of a transtibial prosthesis is aligned in excessive
+
+flexion, there will be early flexion during stance causing instability
+
+of the prosthetic limb. Other contributing factors include excessive
+posterior displacement of the foot in relation to the socket or
+excessive dorsiflexion.
+
+1. A neutral foot setting would not cause early knee flexion
+from midstance through pre-swing.
+
+2. A transtibial socket that is set posteriorly to the foot will
+create an increased extension moment at the knee and result
+in insufficient knee flexion during early stance.
+
+3. A prosthesis that is too short would typically create an
+increased extension moment at the knee and result in
+insufficient knee flexion during early stance. A prosthesis
+that is too long may cause excessive flexion during heel strike
+through midstance.
+
+4. A socket that is aligned in excessive flexion will create an
+increased flexion moment at the knee which will result in
+early flexion through stance phase.
+
+System: Musculoskeletal System
+
+Content Outline: Physical Therapy Examination
+
+Level 2 OD p. 154

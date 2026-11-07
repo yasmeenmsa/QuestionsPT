@@ -1,0 +1,118 @@
+=== PAGE 184 LEFT ===
+PTEXAM TWO: QUESTION 163
+A physical therapist instructs
+
+patient to complete an arm curl with
+
+a dumbbell as depicted in the video.
+Which scenario would produce the
+GREATEST power?
+
+1. Lifting a two pound dumbbell in
+two seconds
+
+2. Lifting a two pound dumbbell in
+three seconds
+
+Z
+
+3. Lifting a four pound dumbbell in
+one second
+
+4. Lifting a four pound dumbbell in four seconds
+Correct Answer: 3 (Coburn p. 52)
+Power is calculated as the amount of work divided by the time
+needed to perform the work. Work is defined as the product of
+force and distance. Each of the presented options involve the
+same amount of distance, therefore the relevant variables to
+consider are the weight of the dumbbell and the time to complete
+the repetition.
+
+1. A two pound dumbbell lifted in two seconds would produce
+more power than the same weight lifted over a longer period
+of time, however, it would not be as great as a heavier weight
+(i.e., four pounds) lifted over a shorter period of time (i.e.,
+one second).
+
+2. Atwo pound dumbbell lifted in three seconds would produce
+the smallest amount of power of the presented options
+since the weight is relatively light (i.e., two pounds) and the
+amount of time to complete the repetition is relatively long
+(i.e., three seconds).
+
+3. A four pound dumbbell lifted in one second would produce
+the greatest amount of power since the weight lifted is the
+heaviest of the presented options and the amount of time
+to complete the repetition (i.e., one second) is the shortest.
+
+4. A four pound dumbbell lifted in four seconds would produce
+less power than the same amount of weight lifted over
+shorter period of time.
+
+System: Musculoskeletal System
+
+Content Outline: Interventions
+
+Level1 p. 126
+=== PAGE 184 RIGHT ===
+TWO Answer Key CHAPTER 11 1051
+PTEXAM TWO: QUESTION 164
+While reading the Methods section of a research report, a physical
+therapist notes the investigators used a repeated measures design.
+This type of experimental design is used to accomplish which of the
+following outcomes?
+
+1. Controls for differences between subjects
+
+2. Keeps the subjects “blind” to the identity of the treatment
+group
+
+3. Ensures that subjects with similar characteristics are assigned
+to different treatment groups
+
+4. Selects a homogenous group of subjects
+
+Correct Answer: 1 (Portney p. 172)
+
+Researchers may employ a number of design strategies to
+
+manipulate and control variables and measurements to strengthen
+
+the validity of their experiment and demonstrate a cause-and-
+effect relationship between the independent and dependent
+variables.
+
+1. In a repeated measures design all subjects experience all
+levels of the independent variable. This provides an efficient
+method for controlling differences between subjects
+because characteristics that may affect the outcomes, such
+as gender, age and physical characteristics, remain constant
+for each subject. Differences in outcomes can be attributed
+to the treatment. Since each subject acts as their own
+control, a repeated measures design is also called a within-
+subjects design.
+
+2. In its most complete form, blinding involves hiding the
+identity of group assignments from the subjects, from
+those who provide treatment, from those who measure the
+outcome variables, and from those who analyze the data.
+repeated measures design may or may not include “blinding.”
+
+3. The design strategy that ensures that subjects with similar
+characteristics are assigned to different treatment groups is
+called matching. A repeated measures design may or may
+not include matching.
+
+4. By selecting subjects who are homogenous with respect
+to a specific trait, the researcher eliminates these traits as
+variables that may interfere with the dependent variable.
+repeated measures design may or may not use homogeneous
+subjects.
+
+System: Non-Systems
+
+Content Outline: Safety and Protection; Professional
+
+Responsibilities; Research
+Level1 p. 834-835
+e SCOREBUILDERS

@@ -1,0 +1,68 @@
+=== PAGE 191 LEFT ===
+Pa SCENARIO
+QUESTIONS 177-180
+Setting: Outpatient clinic
+Gender: Female
+Age: 27 years
+Presenting Problem/Current Condition
+Right knee grade 1 medial collateral ligament sprain
+Medical History
+Patellofemoral syndrome
+Other Information
+Injury occurred 2 days ago while playing soccer
+Patient seems nervous and is hesitant to verbally engage
+Physical Therapy Examination(s)
+Mild right knee edema
+Right knee PROM: 7-0-138 degrees
+Good quadriceps and hamstrings strength
+Physical Therapy Plan of Care
+None; first session
+Notes
+SCOREBUILDERS
+=== PAGE 191 RIGHT ===
+PTEXAM TWO: QUESTION 177
+Which of the following questions would be the MOST appropriate to
+further engage the patient?
+
+1. Is this the first time you have injured your knee?
+
+2. Have you ever been to physical therapy before?
+
+3. How long after your injury did you see a physician?
+
+4. What do you hope to achieve in physical therapy?
+
+Correct Answer: 4 (Goodman Differential Diagnosis
+
+p. 41)
+
+Physical therapists often use a variety of strategies to increase the
+
+level of patient participation in treatment sessions. Open-ended
+
+questions allow patients to answer with a myriad of responses,
+while closed-ended questions can often be answered with a yes
+or no response.
+
+1. The question can be answered with a simple “yes or no” and
+therefore would be unlikely to increase patient participation.
+
+2. The question would also require a simple “yes or no”
+response.
+
+3. The question requires the patient to respond with an amount
+of time. The response, although not a “yes or no,” would be
+equally unlikely to further engage the patient.
+
+4. The question requires the patient to provide some level
+of insight towards their physical therapy goals and may
+provide a foundation for a meaningful exchange between
+the patient and therapist. The information obtained by the
+therapist can be valuable when designing an appropriate
+plan of care.
+
+System: Musculoskeletal System
+
+Content Outline: Physical Therapy Examination
+
+Level 3

@@ -1,0 +1,77 @@
+=== PAGE 25 LEFT ===
+SCENARIO
+QUESTIONS 41-45
+Setting: Outpatient clinic
+Gender: Female
+Age: 13 years
+Presenting Problem/Current Condition
+Anterior cruciate ligament sprain grade
+Patient describes several instances of giving way
+or buckling in the left knee
+Noticeable swelling and pain for several days
+after an instability episode
+Medical History
+Patellofemoral syndrome
+Epilepsy
+Other Information
+MRI: torn anterior cruciate ligament
+Meds: Neurontin (gabapentin)
+Physical Therapy Examination(s)
+Left knee PROM: 0-140 degrees in supine;
+0-130 degrees in prone
+Negative Lachman test
+Numeric pain scale rating 0/10 at rest
+Physical Therapy Plan of Care
+None; first session
+Notes
+SCOREBUILDERS
+=== PAGE 25 RIGHT ===
+PTEXAM ONE: QUESTION 41
+Which finding would MOST likely produce the obtained Lachman
+result?
+
+1. Moderate effusion of the knee joint capsule
+2. Laxity of the medial and lateral collateral ligaments
+3. Protective muscle guarding of the hamstring muscles
+4. Previous injury involving the anterior cruciate ligament
+Correct Answer: 3 (Dutton p. 933)
+The Lachman test is designed to assess the integrity of the
+anterior cruciate ligament. The test is performed with the patient
+positioned in supine with the knee flexed to 20-30 degrees. The
+therapist stabilizes the distal femur with one hand and places
+the other hand on the proximal tibia. The therapist applies an
+anteriorly directed force to the tibia on the femur. A positive test
+is indicated by excessive anterior translation of the tibia on the
+femur with a diminished or absent end-point. A false negative in
+this scenario refers to a negative Lachman test when there is in
+fact an anterior cruciate ligament injury.
+
+1. Moderate effusion of the knee joint capsule would not likely
+contribute to a false negative when performing the Lachman
+test. A more dramatic change in the volume of fluid in the
+knee (i.e., hemarthrosis) would likely be necessary.
+
+2. Laxity of the medial and lateral collateral ligaments would
+have little influence on the Lachman test since this special
+test is designed to assess anterior translation of the tibia
+on the femur in the sagittal plane. The medial and lateral
+collateral ligaments provide stability in the frontal plane.
+
+3. The semitendinosus and semimembranosus insert on the
+posteromedial surface of the proximal tibia, while the
+biceps femoris inserts on the lateral condyle of the tibia
+and the head of the fibula. Protective muscle guarding of
+the hamstring muscles could limit the translation of the
+tibia on the femur and contribute to a false negative when
+performing the Lachman test.
+
+4. A previous injury involving the anterior cruciate ligament
+would make a positive Lachman test more likely and therefore
+would not contribute to a false negative when performing
+this test.
+
+System: Musculoskeletal System
+
+Content Outline: Physical Therapy Examination
+
+Level 2 OD p. 63-64, 108

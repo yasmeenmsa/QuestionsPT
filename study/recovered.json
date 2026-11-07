@@ -1,0 +1,306 @@
+{
+  "ONE-7": {
+    "answer": 3,
+    "options": {
+      "3": "3",
+      "4": "4",
+      "1": "A stage 1 pressure injury is characterized by an observable",
+      "2": "Astage 2 pressure injury is characterized by partial-thickness"
+    }
+  },
+  "ONE-24": {
+    "answer": 1,
+    "options": {
+      "1": "The head",
+      "2": "The trunk",
+      "3": "Thelegs",
+      "4": "The genitalia"
+    }
+  },
+  "ONE-32": {
+    "answer": 3,
+    "options": {
+      "1": "Stage land 3",
+      "2": "Stage 2 and 4",
+      "3": "Stage 3 and 4",
+      "4": "Stage 2 and unstageable"
+    }
+  },
+  "ONE-34": {
+    "answer": 3,
+    "options": {
+      "1": "1\u00a2m?",
+      "2": "3cm?",
+      "3": "5c\u00a2m?",
+      "4": "8cm"
+    }
+  },
+  "ONE-40": {
+    "answer": 4,
+    "options": {
+      "1": "C6",
+      "2": "CF",
+      "3": "Ca",
+      "4": "TI"
+    }
+  },
+  "ONE-93": {
+    "answer": 3,
+    "options": {
+      "1": "Atelectasis : Ii",
+      "2": "Lung consolidation | fe ar",
+      "3": "Pneumothorax 4\u00b0, 3",
+      "4": "Pulmonary embolism Ne sG00)"
+    }
+  },
+  "ONE-99": {
+    "answer": 3,
+    "options": {
+      "2": "6",
+      "3": "10",
+      "4": "15",
+      "1": "Maximal aerobic capacity of 3 METs is extremely low"
+    }
+  },
+  "THREE-2": {
+    "answer": 3,
+    "options": {
+      "1": "53",
+      "2": "1534",
+      "3": "15",
+      "4": "1:15"
+    }
+  },
+  "THREE-14": {
+    "answer": 2,
+    "options": {
+      "1": "L4",
+      "2": "5",
+      "3": "SI",
+      "4": "S2"
+    }
+  },
+  "THREE-16": {
+    "answer": 3,
+    "options": {
+      "1": "10 millimeters",
+      "2": "1centimeter",
+      "3": "3 centimeters",
+      "4": "6 centimeters"
+    }
+  },
+  "THREE-40": {
+    "answer": 3,
+    "options": {
+      "1": "Stagel",
+      "2": "Stage 2",
+      "3": "Stage3",
+      "4": "Unstageable"
+    }
+  },
+  "THREE-49": {
+    "answer": 4,
+    "options": {
+      "1": "10mmHg",
+      "2": "18mmHg",
+      "3": "25mmHg",
+      "4": "35mmHg"
+    }
+  },
+  "THREE-68": {
+    "answer": 3,
+    "options": {
+      "1": "Increased coagulation time",
+      "2": "Decreased hematocrit level",
+      "3": "Increased blood urea nitrogen level",
+      "4": "Decreased hemoglobin level"
+    }
+  },
+  "THREE-69": {
+    "answer": 3,
+    "options": {
+      "1": "Two-person lift",
+      "2": "Hydraulic lift",
+      "3": "Stand pivot",
+      "4": "Sliding board"
+    }
+  },
+  "THREE-99": {
+    "answer": 4,
+    "options": {
+      "2": "24",
+      "4": "48",
+      "1": "A ramp that is designed to accommodate for 12 inches of",
+      "3": "A ramp that is designed to accommodate for 36 inches of"
+    }
+  },
+  "THREE-107": {
+    "answer": 2,
+    "options": {
+      "1": "Deep sensory receptors",
+      "2": "Mechanoreceptors",
+      "3": "Nociceptors",
+      "4": "Thermoreceptors"
+    }
+  },
+  "THREE-121": {
+    "answer": 3,
+    "options": {
+      "1": "30",
+      "2": "60",
+      "3": "120",
+      "4": "240"
+    }
+  },
+  "THREE-149": {
+    "answer": 2,
+    "options": {
+      "1": "3 degrees",
+      "2": "7 degrees",
+      "3": "14 degrees",
+      "4": "21 degrees"
+    }
+  },
+  "THREE-159": {
+    "answer": 2,
+    "options": {
+      "1": "Vil, IX",
+      "2": "IX,X",
+      "3": "X, Xl",
+      "4": "XI, XIl"
+    }
+  },
+  "TWO-21": {
+    "answer": 1,
+    "options": {
+      "1": "Anterior inferior cerebellar",
+      "2": "Anterior spinal",
+      "3": "Basilar",
+      "4": "Middle cerebral"
+    }
+  },
+  "TWO-23": {
+    "answer": 2,
+    "options": {
+      "1": "C4",
+      "2": "C6",
+      "4": "13"
+    }
+  },
+  "TWO-27": {
+    "answer": 4,
+    "options": {
+      "1": "Stage 2",
+      "2": "Stage 3",
+      "3": "Stage 4"
+    }
+  },
+  "TWO-48": {
+    "answer": 4,
+    "options": {
+      "1": "T-test",
+      "2": "Z-test",
+      "3": "Chi-square test",
+      "4": "Analysis of variance (ANOVA) test"
+    }
+  },
+  "TWO-66": {
+    "answer": null,
+    "options": {
+      "1": "Decreased passive range of motion; weak but pain-free",
+      "2": "Decreased active range of motion; strong but painful resistive",
+      "3": "Decreased active and passive range of motion; strong and",
+      "4": "Decreased active range of motion; decreased effort with"
+    }
+  },
+  "TWO-67": {
+    "answer": 1,
+    "options": {
+      "1": "Wail sits for 15 seconds for 10 repetitions",
+      "2": "Leg press for 10 repetitions",
+      "3": "Walking at 2.0 miles per hour on a treadmill for 10 minutes",
+      "4": "Standing hip abduction using an elastic band for 10 repetitions"
+    }
+  },
+  "TWO-77": {
+    "answer": 1,
+    "options": {
+      "1": "5 degrees",
+      "2": "15 degrees",
+      "3": "25 degrees",
+      "4": "35 degrees"
+    }
+  },
+  "TWO-83": {
+    "answer": null,
+    "options": {
+      "1": "Brushing the skin with a light, feathery object",
+      "2": "Passive joint range of motion",
+      "3": "Stroking the skin with a blunt object",
+      "4": "Tapping over a muscle tendon"
+    }
+  },
+  "TWO-84": {
+    "answer": null,
+    "options": {
+      "1": "Passive range of motion",
+      "2": "Active range of motion",
+      "3": "Resistance exercise program",
+      "4": "Endurance training"
+    }
+  },
+  "TWO-97": {
+    "answer": 2,
+    "options": {
+      "1": "64mmHg",
+      "2": "76mmHg",
+      "3": "84mmHg",
+      "4": "98mm Hg"
+    }
+  },
+  "TWO-101": {
+    "answer": 1,
+    "options": {
+      "1": "Increased warm-up and cool down period",
+      "2": "Increased duration of training sessions",
+      "3": "Increased target heart rate range during exercise",
+      "4": "Increased monitoring of exercise intensity through heart rate"
+    }
+  },
+  "TWO-115": {
+    "answer": 1,
+    "options": {
+      "1": "Increased resting heart rate",
+      "2": "Increased heart rate response with exercise",
+      "3": "Increased peak heart rate during exercise",
+      "4": "Increased age-predicted maximal heart rate"
+    }
+  },
+  "TWO-129": {
+    "answer": 2,
+    "options": {
+      "1": "618",
+      "2": "2a",
+      "4": "34",
+      "3": "A score of 30 is a perfect score and would indicate that the"
+    }
+  },
+  "TWO-138": {
+    "answer": 2,
+    "options": {
+      "1": "C4",
+      "2": "C6",
+      "4": "T3",
+      "3": "A patient with a Tl spinal cord injury would be able to drive"
+    }
+  },
+  "TWO-144": {
+    "answer": null,
+    "options": {
+      "1": "Rising from a wheelchair",
+      "2": "Ascending stairs with a handrail",
+      "3": "Descending stairs with a handrail",
+      "4": "Ascending a curb"
+    }
+  }
+}

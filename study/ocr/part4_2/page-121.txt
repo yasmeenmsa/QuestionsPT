@@ -1,0 +1,89 @@
+=== PAGE 121 LEFT ===
+SCENARIO
+QUESTIONS 41-45
+Setting: Inpatient rehabilitation
+Gender: Female
+Age: 56 years
+Presenting Problem/Current Condition
+Multiple sclerosis
+Medical History
+Two relapses of symptoms in the past year
+Migraine headaches
+Other Information
+Patient goals include returning to pool exercise and
+improving mobility
+Patient describes daily pain that is made worse with
+activity
+Lives with spouse in a one-story house with three step
+entrance
+Physical Therapy Examination(s)
+Ataxic gait
+Truncal weakness and poor balance
+Lower extremity spasticity
+Uses walker to ambulate 100 feet indoors
+Difficulty transferring from sit to stand without relying
+on extensor tone
+Physical Therapy Plan of Care
+None; first visit
+Notes
+SCOREBUILDERS
+=== PAGE 121 RIGHT ===
+PTEXAM TWO: QUESTION 41
+
+The physical therapist attempts to quantify the patient’s pain by
+asking her to mark the point on a 10 centimeter line that best
+describes her present pain level. Assuming each end of the line is
+anchored by one extreme of perceived pain intensity, which term
+BEST describes this type of pain scale?
+
+1. Descriptor differential scale
+
+2. Verbal rating scale
+
+3. Visual analogue scale
+
+4. Numerical rating scale
+
+Correct Answer: 3 (Goodman Differential Diagnosis
+
+p. 104)
+
+There are a variety of commonly used pain scales in physical
+
+therapy. Physical therapists should have familiarity with the
+
+various scales and be able to select an appropriate scale based
+on the breadth and depth of information they are attempting to
+collect.
+
+1. differential scale consists of 12 descriptor items
+each centered over 21 horizontal dashes. At the extreme left
+dash is a minus sign and at the extreme right dash is a plus
+sign. Patients are asked to rate the magnitude of their pain in
+terms of each descriptor.
+
+2. rating scale is most often used to assess pain affect.
+The scale typically consists of a series of adjectives describing
+increasing levels of unpleasantness (e.g., distracting,
+oppressive, agonizing or mild, medium, severe).
+
+3. Avisual analogue scale is a tool used to assess pain intensity
+using a 10-15 centimeter line with the left anchor indicating
+“no pain” and the right anchor indicating “pain as bad as it
+could possibly be.” The level of perceived pain is indicated
+on the line and is reassessed frequently over the course of
+physical therapy to qualify changes in the pain level and to
+assess progress.
+
+4. A numerical rating scale asks patients to rate their perceived
+level of pain intensity on scale from O-10 or 0-100.
+The O represents “no pain” and the 10 or 100 represents “pain
+as bad as it could possibly be.” A 10 centimeter line would not
+typically be of sufficient length to be used for a numerical
+rating scale.
+
+System: Musculoskeletal System
+
+Content Outline: Physical Therapy Examination
+
+Level 1 OD p. 76

@@ -1,0 +1,114 @@
+=== PAGE 125 LEFT ===
+Unit 3 Examinations Answer Ke
+PTEXAM TWO: QUESTION 48
+A group of physical therapists designs a research study in which
+they record the shoulder range of motion before and after treatment
+in three different age groups: adolescents, teenagers, and young
+adults. The therapists want to determine if there is a difference in
+the treatment effect based on the age of the patient. What statistical
+test would MOST likely be used to compare the differences between
+the three groups?
+
+1, T-test
+
+2. Z-test
+
+3. Chi-square test
+
+4. Analysis of variance (ANOVA) test
+
+Correct Answer: 4 (Portney p. 451)
+
+There are a variety of statistical tests that may be used as
+
+means of analyzing data in a research study (e.g., t-test, z-test,
+
+chi-square test, analysis of variance test). The statistical test used
+will depend on the dependent and independent variables that are
+being investigated.
+
+1. A t-test would be used when a study is comparing the
+means of two different groups. In the described scenario,
+the researchers are comparing the means of three different
+groups (i.e., adolescents, teenagers, young adults), therefore,
+a t-test could not be used to analyze the data in this study.
+
+2. A z-test is similar to a t-test in that it compares the means
+of two different groups. However, a z-test would be used in
+situations where the variance of the population being studied
+is known. A t-test is used when the variance is not known.
+
+3. Achi-square test is a statistical test used to compare nominal
+data (e.g., gender, yes-no responses). The described scenario
+is comparing range of motion values, which would be
+considered ratio data.
+
+4. Ananalysis of variance (ANOVA) test is a statistical test that
+is used when three or more variables are being compared.
+In the described scenario, the researchers are comparing
+the means of three different groups, therefore, an ANOVA
+test would be the most appropriate statistical test.
+
+System: Non-Systems
+
+Content Outline: Safety and Protection; Professional
+
+Responsibilities; Research
+Level 1 OB p. 840-842
+=== PAGE 125 RIGHT ===
+PTEXAM TWO: QUESTION 49
+
+A physical therapist attempts to perform mediate percussion over
+patient’s spleen. Which anatomical structure would be placed firmly
+on the surface to be percussed?
+
+1. Distal interphalangeal joint of the middle finger of the
+dominant hand
+
+2. Distal interphalangeal joint of the middle finger of the
+nondominant hand
+
+3. Proximal interphalangeal joint of the middle finger of the
+dominant hand
+
+4. Proximal interphalangeal joint of the middle finger of the
+nondominant hand
+
+Correct Answer: 2 (Boissonnault p. 159)
+Mediate percussion is used to assess density. The technique
+requires the physical therapist to place the middle finger of the
+nondominant hand flat on the desired surface of the body. The
+dominant hand acts as a fulcrum using the middle finger to strike
+the middle finger of the nondominant hand positioned on the
+target area. By analyzing the sound produced, the therapist can
+determine whether the underlying structure is air-filled, fluid-filled
+or solid.
+
+1. Mediate percussion requires the nondominant hand to be
+placed on the surface to be assessed to allow the middle
+finger of the dominant hand to strike the interphalangeal
+joint.
+
+2. The dominant hand acts as a fulcrum using the middle
+finger to strike the middle finger of the nondominant hand
+positioned on the target area. The distal interphalangeal
+joint of the middle finger of the nondominant hand is placed
+on the surface to be assessed to allow the middle finger of
+the dominant hand to strike it.
+
+3. Mediate percussion requires the nondominant hand to be
+placed on the surface to be assessed to allow the middle
+finger of the dominant hand to strike the interphalangeal
+joint.
+
+4. The proximal interphalangeal joint of the middle finger of
+the nondominant hand would be placed on the skin, but the
+distal interphalangeal joint of the nondominant hand would
+be pressed firmly on the skin since it is directly contacted by
+the middle finger of the dominant hand.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Physical Therapy Examination
+
+Level 1 p. 440-441

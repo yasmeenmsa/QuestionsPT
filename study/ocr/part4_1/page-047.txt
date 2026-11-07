@@ -1,0 +1,85 @@
+=== PAGE 47 LEFT ===
+914 Unit 3 Examinations Answer Ke
+PTEXAM ONE: QUESTION 84
+A physical therapist designs a training program for a patient without
+cardiovascular pathology. The therapist calculates the patient’s age-
+predicted maximal heart rate as 175 beats per minute. Which of the
+following target heart rates would be the MOST appropriate for the
+patient during cardiovascular exercise?
+
+1. 93 beats per minute
+
+2. 135 beats per minute
+
+3. 169 beats per minute
+
+4. 195 beats per minute
+
+Correct Answer: 2 (ACSM Resource Manual
+
+p.473)
+
+The target heart rate for exercise can be approximated using
+
+percentage of the maximum heart rate, which can be estimated as
+
+220 age. With this approach, 70-85% of maximum heart rate or
+
+50-70% of maximum oxygen uptake (VO2max) is the recommended
+
+exercise intensity according to the American College of Sports
+
+Medicine. If the maximal heart rate is 175 beats per minute, the
+
+target heart rate range is (70% x 175) to (85% x 175), or 123 to
+
+149 beats per minute. Some sources recommend a more broadly
+
+defined target heart rate range of 60-90%. In either case, the
+
+correct answer would be option 2.
+
+1. 93 beats per minute is below the recommended range for
+exercise intensity. 95 beats per minute corresponds to 53% of
+the maximum heart rate.
+
+2. 135 beats per minute is within the recommended range for
+exercise intensity. 135 beats per minute corresponds to 77%
+of the maximum heart rate.
+
+3. 169 beats per minute is above the recommended range for
+exercise intensity. 169 beats per minute corresponds to 97%
+of the maximum heart rate.
+
+4. 195 beats per minute is above the recommended range for
+exercise intensity. 195 beats per minute corresponds to 111%
+of the maximum heart rate.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Interventions
+
+Level 1 OB p. 446-447
+=== PAGE 47 RIGHT ===
+SCENARIO
+QUESTIONS 85-87
+Setting: Outpatient clinic
+Gender: Female
+Age: 55 years
+Presenting Problem/Current Condition
+Right shoulder adhesive capsulitis (acute phase)
+Medical History
+Right supraspinatus repair five years ago
+Other Information
+Works part time in a plant nursery
+Medical imaging confirmed diagnosis
+Physical Therapy Examination(s)
+Numeric pain scale rating 5/10 at rest
+Decreased ability to complete ADLs and work activities
+Decreased right shoulder AROM and PROM in capsular
+pattern
+Physical Therapy Plan of Care
+Range of motion and stretching
+Shoulder mobilization as tolerated
+Pain management strategies
+Notes

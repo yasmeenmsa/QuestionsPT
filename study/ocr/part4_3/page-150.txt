@@ -1,0 +1,105 @@
+=== PAGE 150 LEFT ===
+PTEXAM TWO: QUESTION 96
+
+A physical therapist prepares to use ultrasound as a component of
+a patient’s plan of care, but is concerned about the potential of the
+ultrasound to exacerbate the patient’s current inflammation. Which
+of the following methods would be the MOST effective to address
+the therapist’s concerns?
+
+1. Utilize ultrasound with a frequency of 1 MHz
+
+2. Limit treatment time to five minutes
+
+3. Incorporate a pulsed 20% duty cycle
+
+4. Select an ultrasound intensity less than 1.5 W/cm?
+
+Correct Answer: 3 (Cameron p. 190) [=a
+
+Physical therapists must select ultrasound treatment parameters
+
+that are consistent with the desired therapeutic outcome. Failure
+
+to select appropriate parameters can lead to poor outcomes and
+potentially jeopardize patient safety.
+
+1. The frequency of ultrasound selected primarily determines
+the depth of penetration. A frequency setting of 1 MHz is
+used for heating of deeper tissues (up to five centimeters).
+
+2. Limiting the treatment time to five minutes does effectively
+control the duration of ultrasound, but it does not address
+several other critical factors that significantly influence
+changes in tissue temperature (e.g., duty cycle, intensity).
+
+3. When ultrasound is used in a pulsed mode with a 20% or
+lower duty cycle, the heat produced during the on time
+of the cycle is dispersed during the off time and as
+result there is no measurable net increase in temperature.
+Ultrasound using a 20% or lower duty cycle would typically
+be used for nonthermal effects.
+
+4. Limiting the intensity of ultrasound to less than 1.5 W/
+cm? is helpful to avoid exacerbating the patient’s current
+inflammation, however, the patient’s condition could still be
+exacerbated at many intensity levels below 1.5 W/cm2.
+
+System: Non-Systems
+
+Content Outline: Equipment, Devices, and Technologies;
+
+Therapeutic Modalities
+Level 2 OD p. 728-731
+=== PAGE 150 RIGHT ===
+TWO Answer Key CHAPTER 11 1017
+PTEXAM TWO: QUESTION 97
+A physical therapist records a patient’s resting blood pressure as
+115/75 mm Hg prior to initiating running activities on a treadmill.
+After five minutes of running at speeds ranging from 4.0-6.0 miles
+per hour, what diastolic blood pressure value would be MOST
+anticipated?
+
+1. 64mmHg
+
+2.
+
+3. 84mmHg
+
+4.
+
+Correct Answer: 2 (ACSM Resource Manual p. 500)
+
+The normal blood pressure response to exercise is a progressive
+
+increase in systolic blood pressure with increasing workload, while
+
+the diastolic blood pressure remains relatively unchanged.
+
+1. A diastolic blood pressure value of 64 mm Hg is 11 mm Hg
+below the patient’s resting diastolic blood pressure value.
+This significant change in the diastolic blood pressure would
+require the exercise to be terminated.
+
+2. A diastolic blood pressure value of 76 mm Hg is 1 mm Hg
+above the patient’s resting diastolic blood pressure value.
+This change would be very consistent with the anticipated
+diastolic blood pressure response to exercise.
+
+3. A diastolic blood pressure value of 84 mm Hg is 9 mm Hg
+above the patient’s resting diastolic blood pressure value.
+This significant change in the diastolic blood pressure
+is excessive and would require careful monitoring and
+potentially termination of the exercise.
+
+4. A diastolic blood pressure value of 98 mm Hg is 23 mm Hg
+above the patient’s resting diastolic blood pressure value.
+This drastic change in the diastolic blood pressure would
+require the exercise to be terminated.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Interventions
+
+Level 2 p. 446-447
+e SCOREBUILDERS

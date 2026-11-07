@@ -1,0 +1,112 @@
+=== PAGE 201 LEFT ===
+1068 Unit 3 Examinations Answer Ke
+PTEXAM THREE: QUESTION 9
+A patient with a C6 spinal cord injury is examined in physical
+therapy. Which of the following objective findings would be the
+BEST indication that the spinal cord injury is incomplete rather than
+complete?
+
+1. Intact sensation on the lateral portion of the shoulder
+
+2. Absent triceps reflex
+
+3. Diminished sensation over the hypothenar eminence
+
+4. Weakness of the biceps muscle
+
+Correct Answer: 3 (Magee p. 21)
+
+A patient with a complete C6 spinal cord injury would not possess
+
+motor, sensory or reflex function below the C6 level. As a result,
+
+any identified finding below this level could provide evidence that
+the injury is not complete.
+
+1. The dermatome associated with the lateral portion of the
+shoulder is C5 and therefore sensation in this area would
+typically be intact in a complete spinal cord injury at the C6
+level.
+
+2. The triceps reflex is associated with the C7-C8 nerve root
+and therefore the reflex would be absent in a complete spinal
+cord injury at the C6 level.
+
+3. The dermatome that corresponds to the hypothenar eminence
+is at the C8 level. As a result, the finding of diminished sensa-
+tion (not absent) at a level below the level of injury (i.e., C6)
+indicates that the injury is incomplete.
+
+4. The biceps muscle is innervated by C5-C6 and therefore
+weakness is often associated with a spinal cord injury at this
+level.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+tevei2 305-306
+SCOREBUILDERS
+=== PAGE 201 RIGHT ===
+PTEXAM THREE: QUESTION 10
+
+A physical therapist reviews the medical record of a 77-year-old
+patient who was prescribed non-steroidal anti-inflammatory
+medications (NSAIDs) for pain post arthroscopic surgery. If toxicity
+is the primary concern, the physician would have likely prescribed an
+analgesic that possesses which of the following drug characteristics?
+
+1. Ashort half-life
+
+2. Along half-life
+
+3. Minimal biotransformation
+
+4. Limited clearance
+
+Correct Answer: 1 (Ciccone p. 35)
+
+When prescribing medication, the physician should be aware of
+
+variety of factors including absorption, distribution, metabolism,
+
+excretion, and pharmacodynamics.
+
+1. Half-life is defined as the amount of time required for fifty
+percent of the drug remaining in the body to be eliminated.
+In general, elderly patients do not metabolize medications
+as quickly as younger patients which creates higher plasma
+levels. As a result, the elderly are at a higher risk for toxicity
+or adverse effects. Medications with a short half-life reduce
+these risks.
+
+2. Half-life is typically the most relevant pharmacokinetic param-
+eter that is considered with the prescription of medication.
+NSAIDs such as Aleve have a long half-life (approximately ten
+hours) whereas acetaminophen has a short half-life (approxi-
+mately two hours).
+
+3. Biotransformation refers to the series of chemical changes
+that take place within a drug following its administration,
+most often due to enzymatic activity. Biotransformation
+typically converts the drug to an inactive form and reduces
+the chance for toxic effects that occur with accumulation or
+prolonged administration. Minimal biotransformation would
+not be as effective in preventing drug toxicity as a medication
+with a shorter half-life.
+
+4. Clearance refers to the rate at which an active drug is
+removed from the body. Clearance is dependent on the
+organ’s or tissue’s ability to extract the drug from the plasma
+and on the overall perfusion of the organ. If a drug possessed
+limited clearance, there would be a higher risk for toxicity
+since it would take the drug longer to be eliminated from
+the system.
+
+System: Other Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+Level 3 p. 596-597

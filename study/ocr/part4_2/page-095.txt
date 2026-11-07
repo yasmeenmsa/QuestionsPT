@@ -1,0 +1,84 @@
+=== PAGE 95 LEFT ===
+SCENARIO
+QUESTIONS 176-180
+Setting: Outpatient clinic
+Gender: Female
+Age: 26 years
+Presenting Problem/Current Condition
+Right fibularis tendonitis
+Medical History
+Patellofemoral syndrome
+Other Information
+Meds: Advil (ibuprofen) as needed
+Patient reports a snapping-like sensation in the lateral
+ankle
+Physical Therapy Examination(s)
+Pain: 2/10
+Mild edema in the posterior lateral ankle region
+Decreased ankle proprioception
+Limited lower extremity flexibility
+Physical Therapy Plan of Care
+Ankle strengthening
+Pulsed ultrasound
+Proprioceptive and balance training
+Lower extremity stretching program
+Cryotherapy
+Notes
+SCOREBUILDERS
+=== PAGE 95 RIGHT ===
+PTEXAM ONE: QUESTION 176
+Which movement would most likely reproduce the patient’s
+subjective complaint of snapping?
+
+1. Active ankle plantar flexion and inversion
+
+2. Active ankle dorsiflexion and eversion
+
+3. Passive ankle plantar flexion and inversion
+
+4. Passive ankle dorsiflexion and eversion
+
+Correct Answer: 2 (Higgins p. 328)
+
+Fibularis tendon subluxation occurs when the fibularis longus
+
+and/or fibularis brevis displace from the retromalleolar groove
+
+with fibularis tendon loading. The initial cause of the subluxation
+may occur during an inversion ankle sprain when the fibularis
+muscles are forcefully stretched, damaging the retinaculum that
+maintains the tendons in the retromalleolar groove. Patients with
+
+a fibularis tendon subluxation often describe a painful “snapping”
+
+or “popping” sensation at the lateral malleolus. Patients with this
+
+condition often present with lateral ankle effusion and tenderness
+to palpation in the retromalleolar groove.
+
+1. The fibularis longus and brevis act as strong evertors of the
+ankle. As a result, inversion would not be useful to reproduce
+the subluxation.
+
+2. Active ankle dorsiflexion and eversion often serve as the
+preferred action to reproduce the subluxation. Active plan-
+tar flexion or circumduction may also be useful. Although
+reproducing the subluxation is not necessarily desirable,
+it is important for the therapist to initially observe the
+subluxation.
+
+3. The fibularis longus and brevis act as strong evertors of the
+ankle. As a result, inversion would not be useful to reproduce
+the subluxation. In addition, since the tendon is a contractile
+structure, active range of motion is necessary.
+
+4. Ankle dorsiflexion and eversion are often used to reproduce
+the subluxation. However, active motion is required since the
+tendon is a contractile structure.
+
+System: Musculoskeletal System
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+Level 1

@@ -1,0 +1,100 @@
+=== PAGE 86 LEFT ===
+PTEXAM ONE: QUESTION 158
+
+A physical therapist instructs a patient to expire maximally after
+taking a maximal inspiration. The therapist can use these instructions
+to assess which of the following lung measures?
+
+1. Expiratory reserve volume
+
+2. Inspiratory reserve volume
+
+3. Total lung capacity
+
+4. Vital capacity
+
+Correct Answer: 4 (Frownfelter p. 139) =a
+
+Vital capacity is the maximum volume of gas that can be exhaled
+
+after a maximum inhalation.
+
+1. Expiratory reserve volume (ERV) is the additional volume of
+air that can be exhaled beyond the normal tidal exhalation.
+ERV is one component of vital capacity.
+
+2. Inspiratory reserve volume (IRV) is the additional volume of
+air that can be inhaled beyond the normal tidal inhalation.
+IRV is one component of vital capacity.
+
+3. Total lung capacity is the maximum volume to which the
+lungs can be expanded. It is the sum of vital capacity and
+residual volume: TLC VC RV.
+
+4. Vital capacity is the maximum volume of gas that can be
+exhaled after a maximum inhalation. It is equal to the sum
+of inspiratory reserve volume, tidal volume, and expiratory
+reserve volume: VC IRV TV ERV.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Physical Therapy Examination
+
+Level 1 OB p. 408-409
+=== PAGE 86 RIGHT ===
+ONE Answer Key CHAPTER 10 953
+PTEXAM ONE: QUESTION 159
+A patient’s medical record indicates the presence of a significant
+electrolyte imbalance. Which of the following conditions would
+MOST commonly be associated with an increased risk of cardiac
+arrest if left untreated?
+
+1. Hypercalcemia
+2. Hyperkalemia
+3. Hypermagnesemia
+4. Hypernatremia
+Correct Answer: 2 (Paz p. 380)
+Electrolytes play a critical role in maintaining homeostasis within
+the body. Examples of critical roles played by electrolytes include
+regulating cardiac function, fluid balance, acid-base balance,
+and neurologic activity. The most serious electrolyte imbalances
+involve abnormalities in the level of calcium, potassium, and
+sodium.
+
+1. Hypercalcemia refers to an excessive level of calcium in the
+blood. Normal serum calcium is 8.4-10.2 mg/dL. The condition
+is most commonly associated with hyperparathyroidism
+since excessive parathyroid hormone raises the level of
+circulating calcium above normal. Symptoms typically
+include constipation, pain, nausea, and vomiting.
+
+2. Hyperkalemia refers to an excessive level of potassium in
+the blood. Normal serum potassium is 3.5-5.0 mEq/L. Levels
+higher than 7 mEq/L can have significant hemodynamic and
+neurologic consequences, while levels exceeding 8.5 mEq/L
+can cause respiratory paralysis or cardiac arrest. Symptoms
+typically are related to abnormalities in muscular or cardiac
+function.
+
+3. Hypermagnesemia refers to an excessive level of magnesium
+in the blood. Normal serum magnesium is 1.5-2.0
+This condition is relatively rare since the kidneys are able to
+eliminate excess magnesium by rapidly reducing its tubular
+absorption. Hypermagnesemia is most often caused by
+renal failure. Symptoms typically include hypotension and
+respiratory depression.
+
+4. Hypernatremia refers to an excessive level of sodium in the
+blood. Normal serum sodium is 135-145 mEq/L. The condition
+results when there is a net water loss or a sodium gain and
+reflects too little water in relation to total body sodium and
+potassium. Hypernatremia is most often caused by impaired
+thirst or restricted access to water and can be facilitated by
+pathologic conditions with increased fluid loss. The primary
+symptom of this condition is thirst.
+
+System: Other Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis

@@ -1,0 +1,81 @@
+=== PAGE 103 LEFT ===
+Unit 3 Examinations Answer Ke
+PTEXAM TWO: QUESTION 5
+A physical therapist prepares to perform volumetric measurements
+as a means of quantifying edema. Which patient would appear to be
+the MOST appropriate candidate for this type of objective measure?
+
+1. female with a Colles’ fracture
+
+2. A 27-year-old male with bicipital tendonitis
+
+3. A 48-year-old male with a rotator cuff tear
+
+4. male with pulmonary edema
+
+Correct Answer: 1 (Magee p. 543) =a
+
+Volumetric measurements are commonly used to measure
+
+edema in the distal extremities. The measurement is typically
+
+performed by examining the amount of water displaced from
+
+cylinder following immersion of an affected body part. It would be
+
+impractical to use this type of measurement in an area other than
+
+a distal extremity.
+
+1. A Colles’ fracture refers to a fracture of the distal end of
+the radius. The injury would likely result in swelling in the
+wrist and hand which could be quantified with volumetric
+measurements.
+
+2. The location of the biceps tendon would require immersion
+of the upper extremity or the entire shoulder complex. The
+size of the upper extremity would make this unrealistic.
+
+3. The location of the rotator cuff would require immersion of
+the entire shoulder complex which would also be unrealistic
+due to the size of the area.
+
+4. Pulmonary edema refers to swelling or fluid accumulation in
+the lungs. This condition would be impossible to assess using
+volumetric measurements.
+
+System: Cardiovascular and Pulmonary Systems
+
+Content Outline: Physical Therapy Examination
+
+Level 2
+=== PAGE 103 RIGHT ===
+PTEXAM TWO: QUESTION 6
+A physical therapist reviews the parameters of several pain
+modulation theories using transcutaneous electrical nerve
+stimulation (TENS). When comparing sensory stimulation to motor
+stimulation, sensory stimulation requires which of the following
+modifications to the parameters?
+1. Greater phase duration
+2. Greater frequency
+3. Stronger amplitude
+4. Shorter treatment time
+Correct Answer: 2 (Cameron p. 269)
+Motor stimulation requires sufficient phase charge to elicit a muscle
+contraction. This is accomplished by using a low frequency and
+long phase duration. Sensory stimulation, also called conventional
+TENS, requires a sufficient phase charge to achieve a sensory
+response, but is below the motor threshold. This is accomplished
+by using a high frequency and short phase duration.
+1. Phase duration is shorter with sensory level stimulation com-
+pared to motor level stimulation.
+2. Frequency is significantly greater with sensory level stimu-
+lation compared to motor level stimulation.
+3. Sensory level stimulation requires lower amplitude than
+motor level stimulation.
+4. Treatment time is highly variable with sensory and motor
+stimulation TENS.
+System: Non-Systems
+Content Outline: Equipment, Devices, and Technologies;
+Therapeutic Modalities
+Level 2 OD p. 747-748

@@ -1,0 +1,121 @@
+=== PAGE 246 LEFT ===
+Exam T
+PTEXAM THREE: QUESTION 96
+A physical therapist participates in a formal gait analysis using
+three-dimensional analysis software for a patient with cerebral palsy.
+Which objective finding would LEAST likely be obtained through this
+process?
+
+1. Decreased swing phase
+
+2. Decreased walking velocity
+
+3. Decreased quadriceps strength
+
+4. Decreased knee extension range of motion
+
+Correct Answer: 3 (Levangie p. 525)
+
+Formal gait analysis can objectively measure the magnitude of
+
+gait deviations in children with disabilities. Kinematics in gait
+
+analysis most often utilize either two or three dimensions and rely
+on external markers serving as reference points to analyze motion.
+
+The collected information can be utilized to quantify spatial and
+
+temporal variables associated with gait, evaluate the effectiveness
+
+of treatment, and examine the influence of medications, bracing
+or surgical interventions.
+
+1. The amount of time spent in stance phase or swing phase
+can be determined through gait analysis. The stance phase
+of the gait cycle typically occupies approximately 60% of the
+gait cycle and the swing phase occupies approximately 40%.
+
+2. Walking velocity refers to the rate of walking or the distance
+traversed in a specified length of time. Velocity is often
+expressed as stride length divided by cycle time and is
+routinely measured during gait analysis. Normalization
+methods are used when comparing different velocities due
+to the correlation with leg length.
+
+3. Muscle weakness cannot be measured directly with gait
+analysis. Although gait analysis may include electromyog-
+raphy, this measure would not provide specific information
+on muscle strength. A thorough knowledge of muscle func-
+tion and normal gait combined with the results of manual
+muscle testing provides the therapist with the necessary
+information to assess muscle weakness.
+
+4. Range of motion can be quantified at a variety of joints
+throughout the gait cycle using gait analysis. Diminished
+range of motion in an individual with cerebral palsy could be
+due to a static contracture or a dynamic contracture caused
+by spasticity.
+
+System: Musculoskeletal System
+
+Content Outline: Physical Therapy Examination
+=== PAGE 246 RIGHT ===
+HREE Answer Key CHAPTER 12 1113
+PTEXAM THREE: QUESTION 97
+A patient’s medical chart indicates that a patient has a lesion in
+the posterior portion of the spinal cord. Which of the following
+impairments would MOST likely be observed?
+
+1. Inability to determine joint position
+
+2. Inability to distinguish between hot and cold
+
+3. Inability to distinguish between sharp and dull
+
+4. Inability to feel light touch
+
+Correct Answer: 1 (O’Sullivan p. 82)
+
+Sensory information is transmitted to the brain either by the
+
+spinothalamic tract or the dorsal column-medial lemniscus
+
+tract. The spinothalamic tract is located in the anterior and
+lateral portions of the spinal cord and the dorsal column-medial
+lemniscus tract is located in the posterior portion of the spinal cord.
+
+The spinothalamic tract primarily transmits nondiscriminative
+
+sensations (e.g., temperature, pain, touch), while the dorsal
+
+column-medial lemniscus tract transmits more discriminative
+sensations (e.g., discriminative touch, stereognosis, kinesthesia).
+
+1. Proprioception is the sense of static joint position. Proprio-
+ceptive information is transmitted to the brain via the dorsal
+column-medial lemniscus tract.
+
+2. Temperature awareness is the ability to distinguish between
+hot and cold stimuli. Temperature sense information is
+transmitted to the brain via the anterolateral spinothalamic
+tract.
+
+3. Pain perception is determined by the ability to distinguish be-
+tween sharp and dull sensations. Pain perception information
+is transmitted to the brain via the anterolateral spinothalamic
+tract.
+
+4. Touch awareness is the ability to perceive the sensation of
+touch. Touch awareness information is transmitted to the
+brain via the anterolateral spinothalamic tract. If the patient
+were required to determine the location of the touch (i.e.,
+tactile localization), the information would be transmitted via
+the dorsal column-medial lemniscus tract since this sensation
+is more discriminative.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+Level 1 p. 253, 267

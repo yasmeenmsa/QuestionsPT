@@ -1,0 +1,84 @@
+=== PAGE 71 LEFT ===
+SCENARIO
+QUESTIONS 130-132
+Setting: Early intervention program
+Gender: Female
+Age: 2 years 6 months
+Presenting Problem/Current Condition
+Down syndrome
+Significant gross motor delays
+Medical History
+Tetralogy of Fallot surgical repair at 11 months of age;
+additional corrective surgery performed at 18 months of
+age
+Other Information
+Parents are concerned that their child is not meeting
+gross motor milestones, such as standing without support
+and walking independently
+Parents enrolled the child in a community gym class to
+work on gross motor activities, including basic tumbling
+skills
+Child presents with intellectual deficits
+Physical Therapy Examination(s)
+Tonal abnormalities
+Limited postural responses in standing including ankle,
+hip, and stepping strategies
+Physical Therapy Plan of Care
+Family education
+Mobility training
+Postural and equilibrium training
+Notes
+SCOREBUILDERS
+=== PAGE 71 RIGHT ===
+PTEXAM ONE: QUESTION 130
+
+What is the MOST likely rationale for the physical therapist
+instructing the parents to avoid having the child perform forward
+rolls in the community gym class?
+
+1. Increased risk for hydrocephalus
+
+2. Increased risk for spinal cord injury
+
+3. Increased risk for traumatic brain injury
+
+4. Increased risk for developmental delay
+
+Correct Answer: 2 (Goodman Pathology p. 1130)
+
+Patients diagnosed with Down syndrome are typically hypotonic
+
+and often present with vertebral instability due to ligamentous
+
+laxity, especially at the atlantoaxial joint (Cl-C2). The described
+activity would significantly increase the risk for atlantoaxial joint
+subluxation or dislocation and should be avoided in these patients.
+
+1. Hydrocephalus refers to the buildup of fluid in the ventricles
+deep within the brain. The excess fluid increases the size of
+the ventricles and places pressure on the brain. Attempting
+a forward roll would not increase the risk of hydrocephalus.
+
+2. Dislocation of the atlantoaxial joint is considered a medical
+emergency since it can place abnormal compression on the
+spinal cord. Patients with vertebral instability in this area
+should avoid activities such as diving, tumbling, and contact
+sports to minimize the risk for these life-threatening injuries.
+
+3. Though the head is coming in contact with the ground during
+a forward roll, it would be unlikely to cause a traumatic brain
+injury. A patient with Down syndrome would not be at any
+greater risk for a traumatic brain injury when compared to
+other patients performing this same movement.
+
+4. Developmental delay is a component of the clinical presenta-
+tion for patients with Down syndrome. However, performing
+a forward roll would not further increase the risk of develop-
+mental delay in these patients.
+
+System: Neuromuscular and Nervous Systems
+
+Content Outline: Foundations for Evaluation, Differential
+
+Diagnosis, and Prognosis
+Level 2 OD p. 322-323, 342-343
