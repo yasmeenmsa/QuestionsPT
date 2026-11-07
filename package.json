@@ -1,0 +1,9 @@
+{
+  "name": "ptexam-2day-study-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "bun run server.js",
+    "dev": "bun run server.js"
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ptexam1-q9",
+    "number": 9,
+    "exam": "PTEXAM ONE",
+    "chapter": "CHAPTER 10",
+    "block": 1,
+    "stem": "A physical therapist evaluates wheelchair prescription options for patients with cervical spinal cord injury. Which patient and wheelchair combination is MOST appropriate?",
+    "image": null,
+    "options": [
+      "A patient with C6–C7 tetraplegia using friction surface handrims only without propulsion strength considerations",
+      "A patient with C5 tetraplegia relying solely on a manual wheelchair with handrim projections for long-distance community mobility",
+      "A patient with C4 tetraplegia using a power wheelchair with head, chin, or sip-and-puff mouth controls and a tilt-in-space frame",
+      "A patient with C5 tetraplegia who cannot use joystick controls on a power wheelchair"
+    ],
+    "correctAnswer": 3,
+    "citation": "O'Sullivan, p. 308-310, 696-699",
+    "overview": "Patients with high cervical tetraplegia require specialized power wheelchair controls and pressure relief systems based on their lowest intact motor level.",
+    "rationales": [
+      "Friction surface handrims are used when patients do not have a functional grip or the strength necessary to adequately propel a wheelchair. Patients with C6–C7 tetraplegia commonly rely on this feature, though the full clinical scenario favors the C4 power wheelchair match.",
+      "Handrim projections add depth to the wheel and allow the patient to more easily propel the wheelchair. This is indicated with C5 tetraplegia where the lowest innervation includes the biceps, brachialis, brachioradialis, deltoids, rhomboids, and supinator. Although a patient with C5 tetraplegia may utilize handrim projections, the necessary energy expenditure may necessitate the use of a power wheelchair for mobility.",
+      "A patient with C4 tetraplegia will have innervation of the face and neck, diaphragm, and trapezius muscles. The patient should be able to verbally direct all aspects of wheelchair management and would be a candidate for a power wheelchair with head or mouth controls. The wheelchair would also require a tilt-in-space frame to allow for pressure relief.",
+      "A patient with C5 tetraplegia is appropriate for a power wheelchair with joystick controls. Patients utilize a power wheelchair for community mobility secondary to the high energy expenditure of using a manual wheelchair with handrim projections."
+    ],
+    "system": "Neuromuscular and Nervous Systems",
+    "contentOutline": "Interventions",
+    "level": "Level 2",
+    "oneLineFact": "C4 tetraplegia = diaphragm + trapezius intact → power wheelchair with sip-and-puff/head/chin controls + tilt-in-space pressure relief."
+  },
+  {
+    "id": "ptexam1-q10",
+    "number": 10,
+    "exam": "PTEXAM ONE",
+    "chapter": "CHAPTER 10",
+    "block": 1,
+    "stem": "A physical therapist progresses a patient through the lumbar extension progression sequence (from least provocative to most provocative: 1. prone with a pillow under the waist; 2. prone; 3. prone on elbows; 4. prone press-up; 5. standing extension). Which position describes a patient lying on their stomach with the spine in a slightly extended position?",
+    "image": null,
+    "options": [
+      "Prone press-up",
+      "Prone with a pillow under the waist",
+      "Standing extension",
+      "Prone position"
+    ],
+    "correctAnswer": 4,
+    "citation": "Dutton p. 1353",
+    "overview": "The patient in the picture is demonstrating prone on elbows. A patient assumes the position by lying in prone with their elbows directly under their shoulders. The patient then moves their sternum away from the surface as the spine moves up and away from the shoulder blades. The extension progression sequence from least provocative to most provocative is: 1. prone with a pillow under the waist; 2. prone; 3. prone on elbows; 4. prone press-up; 5. standing extension.",
+    "rationales": [
+      "A patient performing a prone press-up lies in prone with their palms on the surface. The patient performs a press-up by straightening their arms as much as possible while keeping the pelvis flat on the surface.",
+      "Prone with a pillow under the waist is often the most comfortable position for a patient since the pillow allows the spine to assume a more flexed position.",
+      "Standing extension occurs with the patient in standing with their feet slightly separated. The patient places their hands on the small of the back with the fingers pointing downward and the thumbs pointing anteriorly. The patient then bends backwards at the waist.",
+      "A prone position refers to a patient lying on their stomach. This position requires the spine to be in a slightly extended position."
+    ],
+    "system": "Musculoskeletal System",
+    "contentOutline": "Interventions",
+    "level": "Level 2",
+    "oneLineFact": "Lumbar extension progression (least → most provocative): 1. Prone w/ pillow → 2. Prone → 3. Prone on elbows → 4. Prone press-up → 5. Standing extension."
+  },
+  {
+    "id": "ptexam1-q11",
+    "number": 11,
+    "exam": "PTEXAM ONE",
+    "chapter": "CHAPTER 10",
+    "block": 1,
+    "stem": "A physical therapist works with a patient status post right CVA with left hemiparesis. In the presented image, the patient is stabilizing the upper trunk and shifts weight onto the right ischium. Which description is MOST consistent with the described weight shift?",
+    "image": "/images/q11-weight-shift.jpg",
+    "options": [
+      "Lower body left-side initiated lateral weight shift",
+      "Lower body right-side initiated lateral weight shift",
+      "Lower body initiated anterior weight shift",
+      "Lower body initiated posterior weight shift"
+    ],
+    "correctAnswer": 1,
+    "citation": "Lazaro p. 748",
+    "overview": "Therapists will typically work with patients on both upper and lower body initiated movements while in sitting. Posterior, anterior, and lateral weight shifts produce different outcomes when initiated by the upper body versus the lower body. The upper body is stable while holding a ball in the presented image, while the lower body is initiating a lateral weight shift.",
+    "rationales": [
+      "In sitting, a lower body left-side initiated lateral weight shift produces lateral flexion on the left with concentric lateral activity on the left and eccentric lateral activity on the right. The therapist is attempting to facilitate a lower body initiated weight shift in the presented image. There is unweighting on the left ischium and increased weight bearing on the right ischium with elongation of the trunk on the right side.",
+      "In sitting, a lower body right-side initiated lateral weight shift would produce similar movement to the opposite side as the presented image. The right side would demonstrate lateral flexion and decreased weight bearing on the right ischium and subsequent increased weight bearing on the left ischium with left trunk elongation. A therapist would focus more on lower body right-side initiated lateral weight shift with a patient that exhibits right hemiparesis.",
+      "In sitting, a lower body initiated anterior weight shift will facilitate spinal extension through concentric activity of the trunk extensors in order to maintain upright posture. A lower body initiated anterior movement would produce forward weight shift into an anterior tilt of the pelvis.",
+      "In sitting, a lower body initiated posterior weight shift will facilitate spinal flexion through concentric activity of the trunk flexors in order to maintain upright posture. A lower body initiated posterior movement would produce backward weight shift into a posterior tilt of the pelvis."
+    ],
+    "system": "Neuromuscular and Nervous Systems",
+    "contentOutline": "Interventions",
+    "level": "Level 2",
+    "oneLineFact": "Lower-body left-initiated sitting lateral weight shift = unweights left ischium, shifts weight onto right ischium, elongates right trunk, concentric left lateral flexors."
+  },
+  {
+    "id": "ptexam1-q12",
+    "number": 12,
+    "exam": "PTEXAM ONE",
+    "chapter": "CHAPTER 10",
+    "block": 1,
+    "stem": "A patient post stroke affecting the right hemisphere displays signs consistent with pusher syndrome. While practicing seated balance reactions, this patient would MOST likely lean in which direction?",
+    "image": null,
+    "options": [
+      "Forward",
+      "Backward",
+      "To the right",
+      "To the left"
+    ],
+    "correctAnswer": 4,
+    "citation": "O'Sullivan p. 619",
+    "overview": "Pusher syndrome (also known as ipsilateral pushing) is an abnormal motor behavior sometimes encountered in patients who have had a stroke. The condition is characterized by the patient pushing with the stronger extremities toward the hemiparetic side. Pusher syndrome is caused by a misperception of body orientation in relation to gravity.",
+    "rationales": [
+      "The misperception of body orientation with pusher syndrome causes the patient to inaccurately judge a vertical position resulting in a strong lateral lean. A patient with pusher syndrome would not lean forward.",
+      "The misperception of body orientation with pusher syndrome causes the patient to inaccurately judge a vertical position resulting in a strong lateral lean. A patient with pusher syndrome would not lean backward.",
+      "A patient with pusher syndrome would lean laterally to the hemiparetic side. A patient with a stroke affecting the left hemisphere would have right hemiparesis and would lean to the right side.",
+      "A patient with pusher syndrome would lean laterally to the hemiparetic side. A patient with a stroke affecting the right hemisphere would have left hemiparesis and would lean to the left side. The patient would also resist attempts to passively correct their posture to midline."
+    ],
+    "system": "Neuromuscular and Nervous Systems",
+    "contentOutline": "Interventions",
+    "level": "Level 2",
+    "oneLineFact": "Pusher syndrome = pushes with strong limbs TOWARD hemiparetic side (Right CVA → Left hemiparesis → leans LEFT & resists passive midline correction)."
+  }
+]

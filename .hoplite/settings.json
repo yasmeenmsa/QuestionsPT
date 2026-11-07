@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "scripts": {
+    "setup": {
+      "enabled": true,
+      "command": "mkdir -p data public/images"
+    },
+    "run": {
+      "enabled": true,
+      "command": "PORT=3000 bun run server.js"
+    }
+  },
+  "preview": {
+    "enabled": true,
+    "ports": [
+      {
+        "name": "app",
+        "port": 3000,
+        "primary": true,
+        "protocol": "http",
+        "healthcheckPath": "/api/health"
+      }
+    ]
+  }
+}

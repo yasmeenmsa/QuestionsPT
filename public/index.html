@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8d6824" />
+  <title>PTEXAM 550 · 2-Day Physiotherapy Study Companion</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="top-banner">
+    <div class="banner-inner">
+      <div class="brand-group">
+        <div class="brand-logo" aria-hidden="true"><span class="dot dot-orange"></span><span class="dot dot-teal"></span></div>
+        <div>
+          <div class="brand-kicker">2-DAY PHYSIOTHERAPY STUDY PROTOCOL</div>
+          <h1 class="brand-title">PTEXAM 550 Study Companion</h1>
+        </div>
+      </div>
+      <div class="timers-bar">
+        <div class="timer-pill" title="Work 60 minutes, then take a 10-minute break">
+          <span id="session-mode-label">Study Hour</span>
+          <strong class="timer-digits" id="session-timer-display">60:00</strong>
+          <button type="button" class="btn-mini" id="toggle-session-timer-btn">Pause</button>
+          <button type="button" class="btn-mini btn-mini-outline" id="start-break-btn">10m Break</button>
+        </div>
+        <div class="sync-badge" id="sync-status-badge" title="Progress is saved on the server and in this browser">● Saved</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="protocol-strip" aria-label="2-Day Study Rules">
+    <div class="protocol-inner">
+      <div class="protocol-step"><span class="step-num">1</span><span><strong>Cover &amp; Pick (~1 min):</strong> Answer before revealing the key; don't get stuck.</span></div>
+      <div class="protocol-step"><span class="step-num">2</span><span><strong>Tag Each:</strong> <b class="c-knew">✓ Knew it</b> · <b class="c-guessed">? Guessed</b> · <b class="c-wrong">✗ Wrong</b></span></div>
+      <div class="protocol-step"><span class="step-num">3</span><span><strong>4 Blocks × 140:</strong> Break 10 min hourly. Read all 4 rationales on every ✗.</span></div>
+      <div class="protocol-step"><span class="step-num">4</span><span><strong>Before Bed (30m):</strong> Redo only <b class="c-wrong">✗ Wrong</b>, then sleep 6–7 hrs.</span></div>
+    </div>
+  </section>
+
+  <main class="main-container">
+    <section class="dashboard-bar" aria-label="Study progress">
+      <div class="stat-card stat-total">
+        <div class="stat-label">Loaded / Target</div>
+        <div class="stat-value"><span id="stat-loaded-count">0</span> <small>/ 550 Qs</small></div>
+        <div class="stat-sub" id="stat-answered-sub">0 answered (0%)</div>
+      </div>
+      <button type="button" class="stat-card stat-knew" data-filter-click="knew">
+        <div class="stat-label">✓ Knew It</div><div class="stat-value" id="stat-knew-count">0</div><div class="stat-sub">Solid recall</div>
+      </button>
+      <button type="button" class="stat-card stat-guessed" data-filter-click="guessed">
+        <div class="stat-label">? Guessed</div><div class="stat-value" id="stat-guessed-count">0</div><div class="stat-sub">Review Day 2 AM</div>
+      </button>
+      <button type="button" class="stat-card stat-wrong" data-filter-click="wrong">
+        <div class="stat-label">✗ Wrong</div><div class="stat-value" id="stat-wrong-count">0</div><div class="stat-sub">Redo before bed</div>
+      </button>
+      <div class="stat-card stat-actions">
+        <button type="button" class="btn-night-review" id="night-review-btn">🌙 Night 30m ✗ Drill (<span id="night-wrong-badge">0</span>)</button>
+        <div class="action-row-mini">
+          <button type="button" class="btn-secondary-sm" id="open-mistakes-sheet-btn">📄 Mistakes Sheet</button>
+          <button type="button" class="btn-secondary-sm" id="open-import-modal-btn">＋ Add / Backup Qs</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls-bar">
+      <div class="block-tabs" role="tablist" aria-label="Study Blocks">
+        <button type="button" class="block-tab active" data-block="all">All Loaded (<span id="tab-count-all">0</span>)</button>
+        <button type="button" class="block-tab" data-block="1">Block 1 <small>Q1–140</small> (<span id="tab-count-b1">0</span>)</button>
+        <button type="button" class="block-tab" data-block="2">Block 2 <small>Q141–280</small> (<span id="tab-count-b2">0</span>)</button>
+        <button type="button" class="block-tab" data-block="3">Block 3 <small>Q281–420</small> (<span id="tab-count-b3">0</span>)</button>
+        <button type="button" class="block-tab" data-block="4">Block 4 <small>Q421–550</small> (<span id="tab-count-b4">0</span>)</button>
+      </div>
+      <div class="filter-controls">
+        <div class="filter-pills" role="group" aria-label="Filter by status">
+          <button type="button" class="filter-pill active" data-status="all">All</button>
+          <button type="button" class="filter-pill" data-status="unseen">Unseen</button>
+          <button type="button" class="filter-pill" data-status="wrong">✗ Wrong Only</button>
+          <button type="button" class="filter-pill" data-status="weak">✗ + ? Weak Spots</button>
+          <button type="button" class="filter-pill" data-status="knew">✓ Knew It</button>
+        </div>
+        <div class="view-mode-group">
+          <select id="system-filter-select" aria-label="Filter by Physiotherapy System"><option value="all">All Systems</option></select>
+          <button type="button" class="btn-view-toggle active" id="view-single-btn">1-by-1 Focus</button>
+          <button type="button" class="btn-view-toggle" id="view-two-col-btn">Book 2-Col</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="night-drill-banner hidden" id="night-drill-banner">
+      <div class="banner-flex">
+        <div><strong>🌙 Before-Bed 30-Minute ✗ Drill Active</strong><span>Wrong questions only. Read why the correct answer is right and why each other option is wrong.</span></div>
+        <div><span class="night-countdown" id="night-countdown-display">30:00</span><button type="button" class="btn-mini" id="exit-night-drill-btn">Exit Drill</button></div>
+      </div>
+    </section>
+
+    <section class="break-banner hidden" id="break-banner">
+      <div class="banner-flex">
+        <div><strong>☕ 10-Minute Brain Recovery Break</strong><span>Step away from the screen, hydrate, and stretch. Memory consolidates during rest!</span></div>
+        <div><span class="break-countdown" id="break-countdown-display">10:00</span><button type="button" class="btn-mini" id="end-break-btn">Resume Studying</button></div>
+      </div>
+    </section>
+
+    <section class="question-nav-strip" id="question-nav-strip">
+      <div class="q-nav-left">
+        <button type="button" class="btn-nav" id="prev-q-btn">← Prev</button>
+        <span class="q-position-label" id="q-position-label">Question 1</span>
+        <button type="button" class="btn-nav" id="next-q-btn">Next →</button>
+      </div>
+      <div class="q-dots-scroll" id="q-dots-container" aria-label="Question jump buttons"></div>
+      <div class="q-pacer-box" title="Spend about 1 minute per question and don't get stuck">
+        <span>1-Min Pace:</span><strong class="pacer-time" id="q-pacer-display">0:00</strong>
+        <span class="pacer-nudge hidden" id="q-pacer-nudge">Don't get stuck! Pick &amp; check →</span>
+      </div>
+    </section>
+
+    <section id="questions-container" class="questions-stage mode-single" aria-live="polite"></section>
+
+    <section id="mistakes-sheet-panel" class="mistakes-sheet-panel hidden">
+      <div class="sheet-header">
+        <div><span class="sheet-kicker">DAY 2 &amp; EXAM MORNING RAPID REVIEW</span><h2>One-Page Mistakes &amp; High-Yield Facts</h2><p>Your ✗ Wrong and ? Guessed questions are distilled into one-line clinical takeaways.</p></div>
+        <div class="sheet-actions"><button type="button" class="btn-secondary-sm" id="print-sheet-btn">🖨️ Print / Save PDF</button><button type="button" class="btn-primary-sm" id="close-mistakes-sheet-btn">Back to Questions</button></div>
+      </div>
+      <div id="mistakes-sheet-list" class="mistakes-sheet-list"></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop hidden" id="import-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header"><h2 id="modal-title">Manage Questions &amp; Progress</h2><button type="button" class="btn-close" id="close-import-modal-btn" aria-label="Close">✕</button></div>
+      <div class="modal-body">
+        <div class="modal-tabs">
+          <button type="button" class="modal-tab active" data-modal-tab="quick-add">Add Question</button>
+          <button type="button" class="modal-tab" data-modal-tab="bulk-json">Bulk JSON</button>
+          <button type="button" class="modal-tab" data-modal-tab="backup">Progress Backup</button>
+        </div>
+        <form id="quick-add-form" class="modal-tab-pane">
+          <div class="form-row-2"><label>Question #<input type="number" id="qa-number" required /></label><label>System / Topic<input type="text" id="qa-system" value="Neuromuscular and Nervous Systems" /></label></div>
+          <label>Question Stem<textarea id="qa-stem" rows="3" required></textarea></label>
+          <div class="form-row-2"><label>Option 1<input type="text" id="qa-opt1" required /></label><label>Option 2<input type="text" id="qa-opt2" required /></label></div>
+          <div class="form-row-2"><label>Option 3<input type="text" id="qa-opt3" required /></label><label>Option 4<input type="text" id="qa-opt4" required /></label></div>
+          <div class="form-row-2"><label>Correct Answer (1–4)<select id="qa-correct"><option>1</option><option>2</option><option>3</option><option>4</option></select></label><label>Citation<input type="text" id="qa-citation" /></label></div>
+          <label>Explanation<textarea id="qa-overview" rows="2"></textarea></label>
+          <label>One-Line Fact<input type="text" id="qa-fact" /></label>
+          <button type="submit" class="btn-primary-sm">Save Question</button>
+        </form>
+        <div id="bulk-json-pane" class="modal-tab-pane hidden">
+          <p class="helper-text">Send your remaining screenshots, PDFs, or text in chat and I will load them for you—or paste a JSON question array here.</p>
+          <textarea id="bulk-json-input" rows="8" placeholder='[{"number": 13, "stem": "...", "options": ["A","B","C","D"], "correctAnswer": 1}]'></textarea>
+          <button type="button" class="btn-primary-sm" id="bulk-append-btn">Append Questions</button>
+        </div>
+        <div id="backup-pane" class="modal-tab-pane hidden">
+          <p class="helper-text">Your record is saved automatically on the server and in this browser. You can also download or restore a backup file anytime.</p>
+          <div class="backup-actions">
+            <button type="button" class="btn-primary-sm" id="export-progress-btn">⬇️ Download Progress</button>
+            <label class="btn-secondary-sm file-upload-label">⬆️ Restore Progress<input type="file" id="import-progress-file" accept=".json" class="hidden" /></label>
+            <button type="button" class="btn-danger-sm" id="reset-progress-btn">Reset All Marks</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

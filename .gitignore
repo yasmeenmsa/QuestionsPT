@@ -1,0 +1,5 @@
+.hoplite/runtime/
+.hoplite/attachments/
+.hoplite/artifacts/
+data/progress.json
+node_modules/
