@@ -29,3 +29,17 @@ The included workflow publishes the static app from the repository's default bra
 GitHub Pages hosts only static HTML/CSS/JavaScript. On Pages, each user's progress is saved privately in their own browser's local storage, with JSON export/import for backup or moving devices. Server-side cross-device sync requires running `server.js` on your VPS.
 
 Publishing Pages from a private repository requires a GitHub plan that supports it. Otherwise, make the repository public before enabling Pages; never store secrets or private progress files in the repository.
+
+## Full question bank in Markdown
+
+The complete answer key from the four source PDFs (288 scanned pages) is in [`questions/`](questions/):
+
+| File | Questions |
+| --- | --- |
+| [pt-exam-one.md](questions/pt-exam-one.md) | 180 |
+| [pt-exam-two.md](questions/pt-exam-two.md) | 179 |
+| [pt-exam-three.md](questions/pt-exam-three.md) | 179 |
+
+Each entry has the stem, four options, the correct answer, and the full explanation. See [`questions/README.md`](questions/README.md) for notes and a two-day study plan.
+
+Two questions are absent from the source scans: PT Exam Two Q82 and PT Exam Three Q180. The text was recovered by OCR, so a few words may be imperfect.
