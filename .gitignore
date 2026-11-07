@@ -1,8 +1,0 @@
-.hoplite/runtime/
-.hoplite/attachments/
-.hoplite/artifacts/
-data/progress.json
-data/users/
-data/sessions/
-data/accounts.json
-node_modules/
