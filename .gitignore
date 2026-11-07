@@ -2,4 +2,5 @@
 .hoplite/attachments/
 .hoplite/artifacts/
 data/progress.json
+data/users/
 node_modules/

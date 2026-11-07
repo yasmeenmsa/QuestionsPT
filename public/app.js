@@ -1,4 +1,27 @@
 const STORAGE_KEY = "ptexam_550_progress_v1";
+const STUDY_USER_KEY = "ptexam_550_study_user_v1";
+let serverAvailable = false;
+
+function getStudyUserId() {
+  let userId = localStorage.getItem(STUDY_USER_KEY);
+  if (!userId) {
+    if (crypto.randomUUID) {
+      userId = crypto.randomUUID();
+    } else {
+      const bytes = new Uint8Array(16);
+      crypto.getRandomValues(bytes);
+      bytes[6] = (bytes[6] & 0x0f) | 0x40;
+      bytes[8] = (bytes[8] & 0x3f) | 0x80;
+      const hex = [...bytes].map((byte) => byte.toString(16).padStart(2, "0"));
+      userId = `${hex.slice(0, 4).join("")}-${hex.slice(4, 6).join("")}-${hex.slice(6, 8).join("")}-${hex.slice(8, 10).join("")}-${hex.slice(10).join("")}`;
+    }
+    localStorage.setItem(STUDY_USER_KEY, userId);
+  }
+  return userId;
+}
+
+const studyUserId = getStudyUserId();
+const progressHeaders = { "Content-Type": "application/json", "x-study-user": studyUserId };
 
 const state = {
   questions: [],
@@ -39,11 +62,15 @@ function saveLocalProgress() {
 async function syncProgressToServer(replaceAll = false) {
   saveLocalProgress();
   const badge = document.getElementById("sync-status-badge");
+  if (!serverAvailable) {
+    if (badge) badge.textContent = "● Saved on this device";
+    return;
+  }
   if (badge) badge.textContent = "↻ Saving...";
   try {
-    const response = await fetch("/api/progress", {
+    const response = await fetch("./api/progress", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: progressHeaders,
       body: JSON.stringify({ replaceAll, records: state.records })
     });
     if (!response.ok) throw new Error("Progress save failed");
@@ -54,10 +81,20 @@ async function syncProgressToServer(replaceAll = false) {
 }
 
 async function initApp() {
-  const [questionData, progressData] = await Promise.all([
-    fetch("/api/questions").then((r) => r.json()).catch(() => ({ questions: [] })),
-    fetch("/api/progress").then((r) => r.json()).catch(() => ({ records: {} }))
-  ]);
+  serverAvailable = await fetch("./api/health")
+    .then((response) => response.ok ? response.json() : null)
+    .then((data) => Boolean(data?.ok))
+    .catch(() => false);
+
+  const [questionData, progressData] = serverAvailable
+    ? await Promise.all([
+        fetch("./api/questions").then((r) => r.json()).catch(() => ({ questions: [] })),
+        fetch("./api/progress", { headers: progressHeaders }).then((r) => r.json()).catch(() => ({ records: {} }))
+      ])
+    : [
+        await fetch("./data/questions.json").then((r) => r.json()).then((questions) => ({ questions })).catch(() => ({ questions: [] })),
+        { records: {} }
+      ];
 
   state.questions = Array.isArray(questionData.questions) ? questionData.questions : [];
   const serverRecords = progressData?.records || {};
@@ -71,6 +108,7 @@ async function initApp() {
     }
   }
   state.records = merged;
+  if (!serverAvailable) setText("sync-status-badge", "● Saved on this device");
 
   if (Object.keys(localRecords).length) {
     await syncProgressToServer(false);
@@ -234,6 +272,7 @@ function renderQuestionCard(question) {
             <button type="button" class="mark-btn mark-wrong ${status === "wrong" ? "active" : ""}" data-action="mark-status" data-qid="${escapeHtml(question.id)}" data-status="wrong">✗ Wrong</button>
           </div>
           <button type="button" class="btn-reveal-toggle" data-action="toggle-reveal" data-qid="${escapeHtml(question.id)}">${revealed ? "🙈 Cover Answer Key" : "👁️ Check Answer & Rationales"}</button>
+          ${selectedOption ? `<button type="button" class="btn-reveal-toggle" data-action="retry-question" data-qid="${escapeHtml(question.id)}">↻ Answer Again</button>` : ""}
         </div>
       </div>
       <div class="sb-answer-section ${revealed ? "" : "hidden"}">
@@ -389,7 +428,11 @@ function bindEvents() {
     if (!button) return;
     const questionId = button.dataset.qid;
     if (button.dataset.action === "pick-option") pickOption(questionId, Number(button.dataset.opt));
-    if (button.dataset.action === "mark-status") updateRecord(questionId, { status: button.dataset.status, revealed: true });
+    if (button.dataset.action === "mark-status") updateRecord(questionId, { status: button.dataset.status });
+    if (button.dataset.action === "retry-question") {
+      updateRecord(questionId, { selectedOption: null, revealed: false });
+      resetQuestionPacer();
+    }
     if (button.dataset.action === "toggle-reveal") {
       updateRecord(questionId, { revealed: !state.records[questionId]?.revealed }, false);
     }
@@ -442,6 +485,12 @@ function bindEvents() {
   document.getElementById("end-break-btn").addEventListener("click", endBreakSession);
 
   document.getElementById("night-review-btn").addEventListener("click", () => {
+    for (const question of state.questions) {
+      if (state.records[question.id]?.status === "wrong") {
+        state.records[question.id] = { ...state.records[question.id], selectedOption: null, revealed: false, updatedAt: new Date().toISOString() };
+      }
+    }
+    syncProgressToServer(false);
     state.nightDrillActive = true;
     state.nightDrillSecondsRemaining = 30 * 60;
     document.getElementById("night-drill-banner").classList.remove("hidden");
@@ -549,8 +598,12 @@ function bindEvents() {
 }
 
 async function saveQuestions(payload) {
+  if (!serverAvailable) {
+    alert("Adding questions requires the server version. On GitHub Pages, send new questions in chat so they can be added to the shared set.");
+    return false;
+  }
   try {
-    const response = await fetch("/api/questions", {
+    const response = await fetch("./api/questions", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)

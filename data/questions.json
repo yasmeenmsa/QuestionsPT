@@ -62,7 +62,7 @@
     "chapter": "CHAPTER 10",
     "block": 1,
     "stem": "A physical therapist works with a patient status post right CVA with left hemiparesis. In the presented image, the patient is stabilizing the upper trunk and shifts weight onto the right ischium. Which description is MOST consistent with the described weight shift?",
-    "image": "/images/q11-weight-shift.jpg",
+    "image": "./images/q11-weight-shift.jpg",
     "options": [
       "Lower body left-side initiated lateral weight shift",
       "Lower body right-side initiated lateral weight shift",

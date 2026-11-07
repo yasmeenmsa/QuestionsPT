@@ -5,9 +5,11 @@ const PORT = Number(process.env.PORT || 3000);
 const DATA_DIR = join(import.meta.dir, "data");
 const PUBLIC_DIR = join(import.meta.dir, "public");
 const QUESTIONS_PATH = join(DATA_DIR, "questions.json");
-const PROGRESS_PATH = join(DATA_DIR, "progress.json");
+const USERS_DIR = join(DATA_DIR, "users");
+const ADMIN_TOKEN = process.env.ADMIN_TOKEN || "";
 
 if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR, { recursive: true });
+if (!existsSync(USERS_DIR)) mkdirSync(USERS_DIR, { recursive: true });
 if (!existsSync(PUBLIC_DIR)) mkdirSync(PUBLIC_DIR, { recursive: true });
 
 function readQuestions() {
@@ -48,8 +50,16 @@ function writeQuestions(questions) {
   return normalized;
 }
 
-function readProgress() {
-  if (!existsSync(PROGRESS_PATH)) {
+function getUserId(req) {
+  const userId = req.headers.get("x-study-user") || "";
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(userId)
+    ? userId
+    : null;
+}
+
+function readProgress(userId) {
+  const progressPath = join(USERS_DIR, `${userId}.json`);
+  if (!existsSync(progressPath)) {
     const initial = {
       updatedAt: new Date().toISOString(),
       targetTotal: 550,
@@ -60,7 +70,7 @@ function readProgress() {
         breakCount: 0
       }
     };
-    writeFileSync(PROGRESS_PATH, JSON.stringify(initial, null, 2), "utf8");
+    writeFileSync(progressPath, JSON.stringify(initial, null, 2), "utf8");
     return initial;
   }
   try {
@@ -70,13 +80,18 @@ function readProgress() {
   }
 }
 
-function writeProgress(data) {
+function writeProgress(userId, data) {
   const next = {
     ...data,
     updatedAt: new Date().toISOString()
   };
-  writeFileSync(PROGRESS_PATH, JSON.stringify(next, null, 2), "utf8");
+  writeFileSync(join(USERS_DIR, `${userId}.json`), JSON.stringify(next, null, 2), "utf8");
   return next;
+}
+
+function adminAuthorized(req) {
+  if (ADMIN_TOKEN) return req.headers.get("authorization") === `Bearer ${ADMIN_TOKEN}`;
+  return process.env.NODE_ENV !== "production";
 }
 
 const MIME_TYPES = {
@@ -108,6 +123,7 @@ const server = Bun.serve({
     }
 
     if (pathname === "/api/questions" && req.method === "POST") {
+      if (!adminAuthorized(req)) return Response.json({ ok: false, error: "Admin authorization required" }, { status: 403 });
       try {
         const body = await req.json();
         const existing = readQuestions();
@@ -129,6 +145,7 @@ const server = Bun.serve({
     }
 
     if (pathname.startsWith("/api/questions/") && req.method === "DELETE") {
+      if (!adminAuthorized(req)) return Response.json({ ok: false, error: "Admin authorization required" }, { status: 403 });
       const id = decodeURIComponent(pathname.replace("/api/questions/", ""));
       const existing = readQuestions().filter((q) => q.id !== id);
       const saved = writeQuestions(existing);
@@ -136,17 +153,21 @@ const server = Bun.serve({
     }
 
     if (pathname === "/api/progress" && req.method === "GET") {
-      return Response.json(readProgress());
+      const userId = getUserId(req);
+      if (!userId) return Response.json({ error: "Valid x-study-user header required" }, { status: 400 });
+      return Response.json(readProgress(userId));
     }
 
     if (pathname === "/api/progress" && req.method === "POST") {
+      const userId = getUserId(req);
+      if (!userId) return Response.json({ error: "Valid x-study-user header required" }, { status: 400 });
       try {
         const body = await req.json();
-        const current = readProgress();
+        const current = readProgress(userId);
         const mergedRecords = body.replaceAll
           ? (body.records || {})
           : { ...current.records, ...(body.records || {}) };
-        const next = writeProgress({
+        const next = writeProgress(userId, {
           ...current,
           targetTotal: body.targetTotal || current.targetTotal || 550,
           records: mergedRecords,
