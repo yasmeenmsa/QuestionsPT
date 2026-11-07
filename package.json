@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "bun run server.js",
-    "dev": "bun run server.js"
+    "dev": "bun run server.js",
+    "build:questions": "bun run scripts/build-questions.js"
   }
 }

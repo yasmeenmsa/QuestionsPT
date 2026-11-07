@@ -16,9 +16,21 @@ For production, set an admin token so visitors cannot change the shared question
 NODE_ENV=production ADMIN_TOKEN='replace-with-a-long-random-secret' PORT=3000 bun run server.js
 ```
 
-Each browser receives a random study-user ID. The server stores that user's record separately in `data/users/<id>.json`; users do not share one another's marks. Keep `data/users/` on persistent storage and back it up. Progress also remains in the browser and can be exported/restored from **Add / Backup Qs → Progress Backup**.
+## Phone + PC sync
+
+Create an account in the app, then sign in with the same username and password on your phone and PC. Each account has an independent study record in `data/users/<account-id>.json`. Passwords are bcrypt-hashed, and login sessions use random HTTP-only cookies; passwords and session tokens are never stored in browser local storage.
+
+Back up these runtime files on the VPS:
+
+- `data/accounts.json` — account IDs and password hashes
+- `data/users/` — each account's answers, marks, and notes
+- `data/sessions/` — persistent sign-in sessions
+
+These private files are excluded from Git. Progress can also be exported/restored from **Add / Backup Qs → Progress Backup**.
 
 Use HTTPS through your reverse proxy before sharing the server URL publicly.
+
+After editing the Markdown source in `questions/`, regenerate the app dataset with `bun run build:questions`. The generated `data/questions.json` currently contains 538 questions from three exams.
 
 ## GitHub Pages
 

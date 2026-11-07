@@ -1,31 +1,17 @@
-const STORAGE_KEY = "ptexam_550_progress_v1";
-const STUDY_USER_KEY = "ptexam_550_study_user_v1";
+const GUEST_STORAGE_KEY = "ptexam_550_progress_v1";
+const ACCOUNT_STORAGE_PREFIX = "ptexam_550_account_progress_v1:";
+const LEGACY_QUESTION_IDS = {
+  "ptexam1-q9": "ptexam-one-q9",
+  "ptexam1-q10": "ptexam-one-q10",
+  "ptexam1-q11": "ptexam-one-q11",
+  "ptexam1-q12": "ptexam-one-q12"
+};
 let serverAvailable = false;
-
-function getStudyUserId() {
-  let userId = localStorage.getItem(STUDY_USER_KEY);
-  if (!userId) {
-    if (crypto.randomUUID) {
-      userId = crypto.randomUUID();
-    } else {
-      const bytes = new Uint8Array(16);
-      crypto.getRandomValues(bytes);
-      bytes[6] = (bytes[6] & 0x0f) | 0x40;
-      bytes[8] = (bytes[8] & 0x3f) | 0x80;
-      const hex = [...bytes].map((byte) => byte.toString(16).padStart(2, "0"));
-      userId = `${hex.slice(0, 4).join("")}-${hex.slice(4, 6).join("")}-${hex.slice(6, 8).join("")}-${hex.slice(8, 10).join("")}-${hex.slice(10).join("")}`;
-    }
-    localStorage.setItem(STUDY_USER_KEY, userId);
-  }
-  return userId;
-}
-
-const studyUserId = getStudyUserId();
-const progressHeaders = { "Content-Type": "application/json", "x-study-user": studyUserId };
 
 const state = {
   questions: [],
   records: {},
+  currentUser: null,
   activeBlock: "all",
   activeStatus: "all",
   activeSystem: "all",
@@ -40,9 +26,13 @@ const state = {
   nightDrillSecondsRemaining: 30 * 60
 };
 
-function loadLocalProgress() {
+function localProgressKey() {
+  return state.currentUser ? `${ACCOUNT_STORAGE_PREFIX}${state.currentUser.id}` : GUEST_STORAGE_KEY;
+}
+
+function loadLocalProgress(key = localProgressKey()) {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    return JSON.parse(localStorage.getItem(key) || "null");
   } catch {
     return null;
   }
@@ -50,7 +40,7 @@ function loadLocalProgress() {
 
 function saveLocalProgress() {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+    localStorage.setItem(localProgressKey(), JSON.stringify({
       updatedAt: new Date().toISOString(),
       records: state.records
     }));
@@ -62,7 +52,7 @@ function saveLocalProgress() {
 async function syncProgressToServer(replaceAll = false) {
   saveLocalProgress();
   const badge = document.getElementById("sync-status-badge");
-  if (!serverAvailable) {
+  if (!serverAvailable || !state.currentUser) {
     if (badge) badge.textContent = "● Saved on this device";
     return;
   }
@@ -70,13 +60,109 @@ async function syncProgressToServer(replaceAll = false) {
   try {
     const response = await fetch("./api/progress", {
       method: "POST",
-      headers: progressHeaders,
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ replaceAll, records: state.records })
     });
+    if (response.status === 401) {
+      showSignedOutState("Your session expired. Sign in again to sync.");
+      return;
+    }
     if (!response.ok) throw new Error("Progress save failed");
-    if (badge) badge.textContent = "● Saved";
+    if (badge) badge.textContent = "● Synced to your account";
   } catch {
-    if (badge) badge.textContent = "● Saved Locally";
+    if (badge) badge.textContent = "● Saved on this device";
+  }
+}
+
+function mergeRecords(...sources) {
+  const merged = {};
+  for (const records of sources) {
+    for (const [questionId, record] of Object.entries(records || {})) {
+      const currentId = LEGACY_QUESTION_IDS[questionId] || questionId;
+      if (!merged[currentId] || (record.updatedAt || "") > (merged[currentId].updatedAt || "")) {
+        merged[currentId] = record;
+      }
+    }
+  }
+  return merged;
+}
+
+function updateAuthUI() {
+  const loginRequired = serverAvailable && !state.currentUser;
+  document.getElementById("study-main").classList.toggle("hidden", loginRequired);
+  document.querySelector(".protocol-strip").classList.toggle("hidden", loginRequired);
+  document.getElementById("auth-modal-backdrop").classList.toggle("hidden", !loginRequired);
+  document.getElementById("account-button").classList.toggle("hidden", !serverAvailable);
+  document.getElementById("logout-button").classList.toggle("hidden", !state.currentUser);
+  document.getElementById("account-button").textContent = state.currentUser
+    ? `👤 ${state.currentUser.displayName}`
+    : "Sign in to sync";
+  if (!serverAvailable) setText("sync-status-badge", "● Saved on this device");
+  else if (state.currentUser) setText("sync-status-badge", "● Synced to your account");
+  else setText("sync-status-badge", "Sign in to sync phone + PC");
+}
+
+function showSignedOutState(message = "") {
+  state.currentUser = null;
+  state.records = loadLocalProgress(GUEST_STORAGE_KEY)?.records || {};
+  updateAuthUI();
+  renderAll();
+  if (message) showAuthError(message);
+}
+
+function showAuthError(message = "") {
+  const error = document.getElementById("auth-error");
+  error.textContent = message;
+  error.classList.toggle("hidden", !message);
+}
+
+async function loadAuthenticatedProgress() {
+  const response = await fetch("./api/progress");
+  if (!response.ok) throw new Error("Could not load your saved progress");
+  const progress = await response.json();
+  const accountLocal = loadLocalProgress()?.records || {};
+  const guestLocal = loadLocalProgress(GUEST_STORAGE_KEY)?.records || {};
+  state.records = mergeRecords(progress.records, accountLocal, guestLocal);
+  if (Object.keys(guestLocal).length) {
+    localStorage.removeItem(GUEST_STORAGE_KEY);
+    await syncProgressToServer(false);
+  } else if (Object.keys(accountLocal).length) {
+    await syncProgressToServer(false);
+  } else {
+    saveLocalProgress();
+  }
+}
+
+async function submitAuth(mode) {
+  showAuthError();
+  const register = mode === "register";
+  const submit = document.getElementById(register ? "register-submit" : "login-submit");
+  submit.disabled = true;
+  try {
+    const response = await fetch(`./api/auth/${mode}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(register ? {
+        displayName: valueOf("register-name"),
+        username: valueOf("register-username"),
+        password: document.getElementById("register-password").value
+      } : {
+        username: valueOf("login-username"),
+        password: document.getElementById("login-password").value
+      })
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || "Could not sign in");
+    state.currentUser = data.user;
+    await loadAuthenticatedProgress();
+    document.getElementById("login-form").reset();
+    document.getElementById("register-form").reset();
+    updateAuthUI();
+    renderAll();
+  } catch (error) {
+    showAuthError(error.message);
+  } finally {
+    submit.disabled = false;
   }
 }
 
@@ -86,47 +172,30 @@ async function initApp() {
     .then((data) => Boolean(data?.ok))
     .catch(() => false);
 
-  const [questionData, progressData] = serverAvailable
-    ? await Promise.all([
-        fetch("./api/questions").then((r) => r.json()).catch(() => ({ questions: [] })),
-        fetch("./api/progress", { headers: progressHeaders }).then((r) => r.json()).catch(() => ({ records: {} }))
-      ])
-    : [
-        await fetch("./data/questions.json").then((r) => r.json()).then((questions) => ({ questions })).catch(() => ({ questions: [] })),
-        { records: {} }
-      ];
+  const questionData = serverAvailable
+    ? await fetch("./api/questions").then((r) => r.json()).catch(() => ({ questions: [] }))
+    : await fetch("./data/questions.json").then((r) => r.json()).then((questions) => ({ questions })).catch(() => ({ questions: [] }));
+  const authData = serverAvailable
+    ? await fetch("./api/auth/me").then((r) => r.json()).catch(() => ({ user: null }))
+    : { user: null };
 
   state.questions = Array.isArray(questionData.questions) ? questionData.questions : [];
-  const serverRecords = progressData?.records || {};
-  const localRecords = loadLocalProgress()?.records || {};
-  const merged = { ...serverRecords };
-
-  for (const [questionId, record] of Object.entries(localRecords)) {
-    const serverRecord = merged[questionId];
-    if (!serverRecord || (record.updatedAt || "") > (serverRecord.updatedAt || "")) {
-      merged[questionId] = record;
-    }
-  }
-  state.records = merged;
-  if (!serverAvailable) setText("sync-status-badge", "● Saved on this device");
-
-  if (Object.keys(localRecords).length) {
-    await syncProgressToServer(false);
-  } else {
-    saveLocalProgress();
-  }
+  state.currentUser = authData.user || null;
+  if (state.currentUser) await loadAuthenticatedProgress();
+  else state.records = loadLocalProgress(GUEST_STORAGE_KEY)?.records || {};
 
   populateSystemFilter();
   bindEvents();
   startTimers();
+  updateAuthUI();
   renderAll();
 }
 
 function populateSystemFilter() {
   const select = document.getElementById("system-filter-select");
   const current = select.value || "all";
-  const systems = [...new Set(state.questions.map((q) => q.system).filter(Boolean))].sort();
-  select.innerHTML = `<option value="all">All Systems (${state.questions.length})</option>` +
+  const systems = [...new Set(state.questions.map((q) => q.exam).filter(Boolean))].sort();
+  select.innerHTML = `<option value="all">All Exams (${state.questions.length})</option>` +
     systems.map((system) => `<option value="${escapeHtml(system)}">${escapeHtml(system)}</option>`).join("");
   select.value = current === "all" || systems.includes(current) ? current : "all";
   state.activeSystem = select.value;
@@ -135,7 +204,7 @@ function populateSystemFilter() {
 function getFilteredQuestions() {
   return state.questions.filter((question) => {
     if (state.activeBlock !== "all" && String(question.block) !== state.activeBlock) return false;
-    if (state.activeSystem !== "all" && question.system !== state.activeSystem) return false;
+    if (state.activeSystem !== "all" && question.exam !== state.activeSystem) return false;
     const status = state.records[question.id]?.status;
     if (state.activeStatus === "unseen") return !status;
     if (state.activeStatus === "wrong") return status === "wrong";
@@ -423,6 +492,32 @@ function toggleMistakesSheet(open) {
 }
 
 function bindEvents() {
+  document.getElementById("login-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    submitAuth("login");
+  });
+  document.getElementById("register-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    submitAuth("register");
+  });
+  document.querySelectorAll(".auth-tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".auth-tab").forEach((item) => item.classList.toggle("active", item === tab));
+      document.getElementById("login-form").classList.toggle("hidden", tab.dataset.authTab !== "login");
+      document.getElementById("register-form").classList.toggle("hidden", tab.dataset.authTab !== "register");
+      showAuthError();
+    });
+  });
+  document.getElementById("account-button").addEventListener("click", () => {
+    if (!state.currentUser) updateAuthUI();
+  });
+  document.getElementById("logout-button").addEventListener("click", async () => {
+    const accountCacheKey = localProgressKey();
+    await fetch("./api/auth/logout", { method: "POST" }).catch(() => null);
+    localStorage.removeItem(accountCacheKey);
+    showSignedOutState();
+  });
+
   document.getElementById("questions-container").addEventListener("click", (event) => {
     const button = event.target.closest("[data-action]");
     if (!button) return;

@@ -24,7 +24,11 @@
           <button type="button" class="btn-mini" id="toggle-session-timer-btn">Pause</button>
           <button type="button" class="btn-mini btn-mini-outline" id="start-break-btn">10m Break</button>
         </div>
-        <div class="sync-badge" id="sync-status-badge" title="Progress is saved on the server and in this browser">● Saved</div>
+        <div class="sync-badge" id="sync-status-badge" title="Progress is saved to your account">● Saved</div>
+        <div class="account-controls">
+          <button type="button" class="btn-mini" id="account-button">Sign in to sync</button>
+          <button type="button" class="btn-mini btn-mini-outline hidden" id="logout-button">Sign out</button>
+        </div>
       </div>
     </div>
   </header>
@@ -38,7 +42,7 @@
     </div>
   </section>
 
-  <main class="main-container">
+  <main class="main-container" id="study-main">
     <section class="dashboard-bar" aria-label="Study progress">
       <div class="stat-card stat-total">
         <div class="stat-label">Loaded / Target</div>
@@ -80,7 +84,7 @@
           <button type="button" class="filter-pill" data-status="knew">✓ Knew It</button>
         </div>
         <div class="view-mode-group">
-          <select id="system-filter-select" aria-label="Filter by Physiotherapy System"><option value="all">All Systems</option></select>
+          <select id="system-filter-select" aria-label="Filter by Exam"><option value="all">All Exams</option></select>
           <button type="button" class="btn-view-toggle active" id="view-single-btn">1-by-1 Focus</button>
           <button type="button" class="btn-view-toggle" id="view-two-col-btn">Book 2-Col</button>
         </div>
@@ -157,6 +161,30 @@
             <button type="button" class="btn-danger-sm" id="reset-progress-btn">Reset All Marks</button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop hidden" id="auth-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+    <div class="modal-card auth-card">
+      <div class="modal-header"><div><h2 id="auth-title">Your study record, on every device</h2><p class="helper-text">Sign in with the same account on your phone and PC.</p></div></div>
+      <div class="modal-body">
+        <div class="modal-tabs">
+          <button type="button" class="auth-tab active" data-auth-tab="login">Sign In</button>
+          <button type="button" class="auth-tab" data-auth-tab="register">Create Account</button>
+        </div>
+        <form id="login-form" class="modal-tab-pane">
+          <label>Username<input type="text" id="login-username" autocomplete="username" autocapitalize="none" required minlength="3" maxlength="32" /></label>
+          <label>Password<input type="password" id="login-password" autocomplete="current-password" required minlength="8" maxlength="128" /></label>
+          <button type="submit" class="btn-primary-sm" id="login-submit">Sign In &amp; Load My Progress</button>
+        </form>
+        <form id="register-form" class="modal-tab-pane hidden">
+          <label>Your Name<input type="text" id="register-name" autocomplete="name" maxlength="60" /></label>
+          <label>Username<input type="text" id="register-username" autocomplete="username" autocapitalize="none" required minlength="3" maxlength="32" pattern="[A-Za-z0-9][A-Za-z0-9_.-]{2,31}" /></label>
+          <label>Password (at least 8 characters)<input type="password" id="register-password" autocomplete="new-password" required minlength="8" maxlength="128" /></label>
+          <button type="submit" class="btn-primary-sm" id="register-submit">Create Account &amp; Start Syncing</button>
+        </form>
+        <p class="auth-error hidden" id="auth-error" role="alert"></p>
+        <p class="helper-text">Your password is never stored in the browser. Progress is saved securely under your account on the server.</p>
       </div>
     </div>
   </div>

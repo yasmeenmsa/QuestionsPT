@@ -1624,7 +1624,9 @@ A physical therapist reviews the results of recent laboratory testing before tre
 
 2. Hematocrit measures the percentage of red blood cells in a volume of blood. Hematocrit may be increased when the body's water content is decreased from dehydration, diarrhea, vomiting, excessive sweating, severe burns, and the use of diuretics.
 
-3. A blood urea nitrogen test is performed to assess kidney function. An increased blood urea nitrogen level can be indicative of dehydration, renal failure or heart failure. Normal blood urea nitrogen levels for adults are 10-20 mg/ dL. ‘4. Hemoglobin is the iron-containing molecule of red blood cells that binds with oxygen. A low hemoglobin level is indicative of anemia and suggests the oxygen-carrying capacity of the blood is decreased. Hemoglobin may be increased when the body's water content is decreased from dehydration, diarrhea, vomiting, excessive sweating, severe burns, and the use of diuretics.
+3. A blood urea nitrogen test is performed to assess kidney function. An increased blood urea nitrogen level can be indicative of dehydration, renal failure or heart failure. Normal blood urea nitrogen levels for adults are 10-20 mg/ dL.
+
+4. Hemoglobin is the iron-containing molecule of red blood cells that binds with oxygen. A low hemoglobin level is indicative of anemia and suggests the oxygen-carrying capacity of the blood is decreased. Hemoglobin may be increased when the body's water content is decreased from dehydration, diarrhea, vomiting, excessive sweating, severe burns, and the use of diuretics.
 
 ### Question 69
 
@@ -1693,7 +1695,9 @@ p. 98) The abdominal cavity consists of four abdominal quadrants formed by two i
 
 2. Deep palpation is often performed by placing the flat of the hand on the abdominal wall and applying firm, steady pressure. Deep palpation should start in the quadrant directly opposite the area of pain. The majority of viscera in a normal adult are not palpable unless enlarged. Deep palpation should not be performed unless the patient tolerated superficial palpation.
 
-3. Percussion over abdominal organs is considered a fairly advanced skill even for physicians and is therefore not typical component of the
+3. Percussion over abdominal organs is considered a fairly advanced skill and is not performed first. Auscultation should be completed before percussion because percussion can alter bowel sounds.
+
+4. Auscultation is performed first during an abdominal examination so that bowel sounds and vascular sounds can be assessed before palpation or percussion alters them. This makes auscultation the appropriate first component when assessing suspected visceral referred pain.
 
 ### Question 72
 
@@ -2553,6 +2557,18 @@ Lisfranc injuries occur at the midfoot and may include fractures ‘or dislocati
 
 **Correct answer: 2**
 
+**Explanation**
+
+Stereognosis, vibration sense, and two-point discrimination depend primarily on mechanoreceptors and their ascending sensory pathways. Mechanoreceptors respond to mechanical stimuli such as pressure, touch, and vibration.
+
+1. Deep sensory receptors, including muscle spindles and Golgi tendon organs, primarily provide proprioceptive information about muscle length, tension, and joint position rather than discriminative touch.
+
+2. Mechanoreceptors detect touch, pressure, and vibration. They provide the sensory information needed for stereognosis, vibration perception, and two-point discrimination.
+
+3. Nociceptors respond to potentially damaging stimuli and generate pain signals; they are not primarily responsible for stereognosis, vibration, or two-point discrimination.
+
+4. Thermoreceptors detect changes in temperature and are not primarily responsible for these discriminative touch sensations.
+
 ### Question 108
 
 The measurement of blood pressure with an aneroid sphygmomanometer is said to have concurrent validity if the pressures measured by the sphygmomanometer are equal to the pressures measured at the same time by which of the following devices?
@@ -2810,7 +2826,9 @@ A physical therapist treats a patient post fracture of the left hip. ‘The pati
 
 2. The quad cane, positioned in the right hand with the longer legs pointing away from the patient, will allow for proper distribution of the weight during gait and as a result, the patient will be less likely to trip over the longer legs of the cane.
 
-3. The quad cane should be used in the hand opposite the affected lower extremity with the longer legs of the quad cane positioned away from the patient. ‘4. Thequad cane should be used with the longer legs positioned away from the patient so that the patient does not trip over them.
+3. The quad cane should be used in the hand opposite the affected lower extremity with the longer legs of the quad cane positioned away from the patient.
+
+4. The quad cane should be used with the longer legs positioned away from the patient so that the patient does not trip over them.
 
 ### Question 119
 
@@ -2831,7 +2849,9 @@ Recent revisions in blood pressure guidelines have resulted in more aggressive t
 
 2. Limiting alcohol intake to two or fewer drinks daily for men and no more than one drink daily for women can assist to reduce blood pressure. Limiting alcohol intake would not produce the magnitude of the described blood pressure change.
 
-3. Activity level recommendations include aerobic physical activity for a minimum of 30 minutes per day most days of the week. An increased activity level would not produce the magnitude of the described blood pressure change. 4, Pharmacological management for high blood pressure includes medications such as diuretics, beta blockers, calcium channel blockers, ACE inhibitors, angiotensin receptor blockers, and direct vasodilators. Significant changes such as the described change 20 mm Hg decrease in systolic blood pressure) typically occur through pharmacological management.
+3. Activity level recommendations include aerobic physical activity for a minimum of 30 minutes per day most days of the week. An increased activity level would not produce the magnitude of the described blood pressure change.
+
+4. Pharmacological management for high blood pressure includes medications such as diuretics, beta blockers, calcium channel blockers, ACE inhibitors, angiotensin receptor blockers, and direct vasodilators. Significant changes such as the described 20 mm Hg decrease in systolic blood pressure typically occur through pharmacological management.
 
 Diagnosis, and Prognosis COD) 425-426, 482
 
