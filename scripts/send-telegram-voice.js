@@ -39,11 +39,17 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-async function telegram(method, payload) {
+async function telegram(method, payload, attempt = 0) {
   const response = await fetch(API(method), { method: "POST", body: payload });
   const data = await response.json();
-  if (!data.ok) throw new Error(`${method}: ${data.description || "request failed"}`);
-  return data.result;
+  if (data.ok) return data.result;
+  // Telegram throttles long batches with 429 + retry_after; back off and retry a few times.
+  const retryAfter = data.parameters?.retry_after;
+  if (response.status === 429 && attempt < 5) {
+    await new Promise((done) => setTimeout(done, (retryAfter || 5) * 1000));
+    return telegram(method, payload, attempt + 1);
+  }
+  throw new Error(`${method}: ${data.description || "request failed"}`);
 }
 
 async function discoverChat() {
@@ -97,10 +103,23 @@ function buildText(question) {
 async function synthesize(text, basePath) {
   const mp3 = `${basePath}.mp3`;
   const ogg = `${basePath}.ogg`;
+  if (existsSync(ogg)) return ogg;
   const edgeTts = process.env.EDGE_TTS || "edge-tts";
   await run(edgeTts, ["--voice", VOICE, "--text", text, "--write-media", mp3]);
   await run("ffmpeg", ["-y", "-loglevel", "error", "-i", mp3, "-c:a", "libopus", "-b:a", "48k", "-ar", "48000", "-ac", "1", ogg]);
   return ogg;
+}
+
+// Runs tasks with bounded concurrency so a long batch finishes in minutes rather than hours.
+async function mapLimit(items, limit, worker) {
+  let next = 0;
+  const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (next < items.length) {
+      const index = next++;
+      await worker(items[index], index);
+    }
+  });
+  await Promise.all(runners);
 }
 
 async function main() {
@@ -121,17 +140,31 @@ async function main() {
   const chatId = dryRun ? "dry-run" : await discoverChat();
   if (!chatId) return;
 
+  const suffix = mode === "stem" ? "" : `-${mode}`;
+  const pending = batch.filter((question) => !sent[`${question.id}:${mode}`]);
+  const pathOf = (question) => join(CACHE_DIR, `${question.id}${suffix}`);
+  if (!pending.length) {
+    console.log("Everything in this range has already been sent.");
+    return;
+  }
+
+  const concurrency = Number(process.env.TELEGRAM_SYNTH_CONCURRENCY || "8");
+  console.log(`generating audio for ${pending.length} question(s), ${concurrency} at a time`);
+  let ready = 0;
+  await mapLimit(pending, concurrency, async (question) => {
+    await synthesize(buildText(question), pathOf(question));
+    ready++;
+    if (ready % 25 === 0) console.log(`audio ${ready}/${pending.length}`);
+  });
+  if (dryRun) {
+    console.log(`dry run: ${pending.length} question(s) prepared`);
+    return;
+  }
+
   let count = 0;
-  for (const question of batch) {
+  for (const question of pending) {
     const key = `${question.id}:${mode}`;
-    if (sent[key]) continue;
-    const suffix = mode === "stem" ? "" : `-${mode}`;
-    const base = join(CACHE_DIR, `${question.id}${suffix}`);
-    const ogg = await synthesize(buildText(question), base);
-    if (dryRun) {
-      console.log(`[dry-run] ${question.id} -> ${ogg}`);
-      continue;
-    }
+    const ogg = `${pathOf(question)}.ogg`;
     const form = new FormData();
     form.set("chat_id", String(chatId));
     form.set("voice", new Blob([readFileSync(ogg)], { type: "audio/ogg" }), `${question.id}.ogg`);
@@ -140,10 +173,10 @@ async function main() {
     sent[key] = new Date().toISOString();
     writeFileSync(STATE_PATH, JSON.stringify(sent, null, 2));
     count++;
-    console.log(`sent ${question.id}`);
+    if (count % 10 === 0 || count === pending.length) console.log(`sent ${count}/${pending.length}`);
     await new Promise((done) => setTimeout(done, 400));
   }
-  console.log(dryRun ? `dry run: ${batch.length} question(s) prepared` : `sent ${count} voice note(s) to ${chatId}`);
+  console.log(`sent ${count} voice note(s) to ${chatId}`);
 }
 
 main().catch((error) => {
