@@ -279,10 +279,11 @@ function buildQuestionSpeech(question, revealed) {
 }
 
 function splitForSpeech(text) {
-  const sentences = text.match(/[^.!?]+[.!?]*/g) || [text];
+  // Only break at punctuation followed by whitespace or end, so decimals like "0.5 cm" stay intact.
+  const sentences = text.match(/[\s\S]+?(?:[.!?]+(?=\s|$)|$)/g) || [text];
   const chunks = [];
   let current = "";
-  for (const sentence of sentences) {
+  for (const sentence of sentences.filter((part) => part.trim())) {
     if (current && (current + sentence).length > 280) {
       chunks.push(current.trim());
       current = sentence;

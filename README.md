@@ -2,6 +2,8 @@
 
 Mobile-friendly physiotherapy MCQ study app with hidden answer keys, confidence marking, review timers, weak-spot drills, and saved progress.
 
+**Read aloud:** each question card has a 🔊 Read Aloud button that speaks the stem and options, plus the correct answer and rationales once the key is revealed. A voice picker next to the exam filter prefers Microsoft voices (Edge's online/natural voices rank highest) and falls back to whatever the browser provides; the choice is remembered on that device.
+
 ## Run locally or on your server
 
 Requires [Bun](https://bun.sh/). An 8 GB RAM server is more than sufficient.
