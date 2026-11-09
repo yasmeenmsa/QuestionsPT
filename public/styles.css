@@ -77,9 +77,12 @@ button.stat-card:hover { transform: translateY(-1px); box-shadow: 0 4px 10px #00
 .block-tab.active { background: var(--gold); color: #fff; }
 .filter-pill { border-radius: 999px; }
 .filter-pill.active { background: var(--text); color: #fff; }
-#system-filter-select { padding: .35rem .6rem; border-radius: 7px; border: 1px solid var(--border); font-size: .8rem; max-width: 230px; }
+#system-filter-select, #voice-select { padding: .35rem .6rem; border-radius: 7px; border: 1px solid var(--border); font-size: .8rem; max-width: 230px; }
+#voice-select { max-width: 260px; }
 .btn-view-toggle { background: #fff; }
 .btn-view-toggle.active { background: var(--gold-light); border-color: var(--gold); color: var(--gold-dark); }
+.btn-reveal-toggle.btn-voice { background: #eef6ff; border-color: #b7d3f0; color: #1d4f7c; }
+.voice-status { flex-basis: 100%; margin: .1rem 0 0; font-size: .78rem; color: var(--muted); }
 .night-drill-banner { background: #1e293b; color: #f8fafc; border-radius: 10px; padding: .75rem 1rem; margin-bottom: 1rem; }
 .break-banner { background: #065f46; color: #ecfdf5; border-radius: 10px; padding: .75rem 1rem; margin-bottom: 1rem; }
 .banner-flex { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }

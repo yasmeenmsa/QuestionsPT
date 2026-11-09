@@ -1,5 +1,6 @@
 const GUEST_STORAGE_KEY = "ptexam_550_progress_v1";
 const ACCOUNT_STORAGE_PREFIX = "ptexam_550_account_progress_v1:";
+const VOICE_STORAGE_KEY = "ptexam_550_voice_v1";
 const LEGACY_QUESTION_IDS = {
   "ptexam1-q9": "ptexam-one-q9",
   "ptexam1-q10": "ptexam-one-q10",
@@ -23,7 +24,10 @@ const state = {
   breakActive: false,
   breakSecondsRemaining: 10 * 60,
   nightDrillActive: false,
-  nightDrillSecondsRemaining: 30 * 60
+  nightDrillSecondsRemaining: 30 * 60,
+  voices: [],
+  speakingQuestionId: null,
+  speechToken: 0
 };
 
 function localProgressKey() {
@@ -186,9 +190,175 @@ async function initApp() {
 
   populateSystemFilter();
   bindEvents();
+  initVoiceReader();
   startTimers();
   updateAuthUI();
   renderAll();
+}
+
+function isMicrosoftVoice(voice) {
+  return /^microsoft/i.test(voice.name);
+}
+
+function voiceRank(voice) {
+  let score = 0;
+  if (/natural|online/i.test(voice.name)) score += 4;
+  if (/^en[-_]us/i.test(voice.lang)) score += 2;
+  if (/aria|jenny|michelle|monica|ava|andrew|brian|emma|guy/i.test(voice.name)) score += 1;
+  return score;
+}
+
+function pickBestMicrosoftVoice(voices) {
+  return voices
+    .filter(isMicrosoftVoice)
+    .sort((a, b) => voiceRank(b) - voiceRank(a))[0] || null;
+}
+
+function resolveVoice() {
+  const synth = window.speechSynthesis;
+  const voices = state.voices.length ? state.voices : (synth ? synth.getVoices() : []);
+  const saved = localStorage.getItem(VOICE_STORAGE_KEY) || "auto";
+  if (saved !== "auto") {
+    const chosen = voices.find((voice) => voice.name === saved);
+    if (chosen) return chosen;
+  }
+  return pickBestMicrosoftVoice(voices) || voices.find((voice) => /^en[-_]/i.test(voice.lang)) || voices[0] || null;
+}
+
+function refreshVoiceOptions() {
+  const select = document.getElementById("voice-select");
+  if (!select) return;
+  const synth = window.speechSynthesis;
+  if (!synth) {
+    select.innerHTML = `<option value="">Read-aloud unavailable</option>`;
+    select.disabled = true;
+    return;
+  }
+  const voices = synth.getVoices();
+  state.voices = voices.slice().sort((a, b) => {
+    const microsoftFirst = Number(isMicrosoftVoice(b)) - Number(isMicrosoftVoice(a));
+    return microsoftFirst || voiceRank(b) - voiceRank(a) || a.name.localeCompare(b.name);
+  });
+  if (!voices.length) {
+    select.innerHTML = `<option value="auto">Automatic voice</option>`;
+    select.disabled = false;
+    return;
+  }
+  const saved = localStorage.getItem(VOICE_STORAGE_KEY) || select.value || "auto";
+  const microsoft = state.voices.filter(isMicrosoftVoice);
+  const others = state.voices.filter((voice) => !isMicrosoftVoice(voice));
+  const optionHtml = (voice) => `<option value="${escapeHtml(voice.name)}">${escapeHtml(voice.name)} — ${escapeHtml(voice.lang)}</option>`;
+  const autoLabel = microsoft.length ? "Automatic (best Microsoft voice)" : "Automatic (best available voice)";
+  let html = `<option value="auto">${autoLabel}</option>`;
+  if (microsoft.length) html += `<optgroup label="Microsoft voices">${microsoft.map(optionHtml).join("")}</optgroup>`;
+  if (others.length) html += `<optgroup label="${microsoft.length ? "Other voices" : "Available voices"}">${others.map(optionHtml).join("")}</optgroup>`;
+  select.innerHTML = html;
+  select.value = [...select.options].some((option) => option.value === saved) ? saved : "auto";
+  select.disabled = false;
+}
+
+function setVoiceStatus(message = "") {
+  const status = document.getElementById("voice-status");
+  if (!status) return;
+  status.textContent = message;
+  status.classList.toggle("hidden", !message);
+}
+
+function buildQuestionSpeech(question, revealed) {
+  const parts = [`${question.exam || "Exam"} question ${question.number}.`, question.stem];
+  question.options.forEach((option, index) => parts.push(`Option ${index + 1}. ${option}`));
+  if (revealed) {
+    parts.push(`Correct answer: option ${question.correctAnswer}, ${question.options[question.correctAnswer - 1]}.`);
+    if (question.overview) parts.push(question.overview);
+    if (question.rationales?.length) {
+      parts.push("Rationales.");
+      question.rationales.forEach((rationale, index) => parts.push(`Option ${index + 1}. ${rationale}`));
+    }
+  }
+  return parts.join(" ");
+}
+
+function splitForSpeech(text) {
+  const sentences = text.match(/[^.!?]+[.!?]*/g) || [text];
+  const chunks = [];
+  let current = "";
+  for (const sentence of sentences) {
+    if (current && (current + sentence).length > 280) {
+      chunks.push(current.trim());
+      current = sentence;
+    } else {
+      current += sentence;
+    }
+  }
+  if (current.trim()) chunks.push(current.trim());
+  return chunks;
+}
+
+function stopSpeaking({ rerender = false } = {}) {
+  state.speechToken++;
+  state.speakingQuestionId = null;
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  if (rerender) renderAll();
+}
+
+function speakChunk(chunks, index, token, voice) {
+  if (token !== state.speechToken) return;
+  if (index >= chunks.length) {
+    state.speakingQuestionId = null;
+    setVoiceStatus("Finished reading.");
+    renderAll();
+    return;
+  }
+  const utterance = new SpeechSynthesisUtterance(chunks[index]);
+  if (voice) utterance.voice = voice;
+  utterance.rate = 0.98;
+  utterance.onend = () => speakChunk(chunks, index + 1, token, voice);
+  utterance.onerror = (event) => {
+    if (token !== state.speechToken) return;
+    state.speakingQuestionId = null;
+    setVoiceStatus(event.error === "interrupted" || event.error === "canceled" ? "" : "Read-aloud stopped.");
+    renderAll();
+  };
+  window.speechSynthesis.speak(utterance);
+}
+
+function toggleReadQuestion(questionId) {
+  if (state.speakingQuestionId === questionId) {
+    stopSpeaking({ rerender: true });
+    setVoiceStatus("Read-aloud stopped.");
+    return;
+  }
+  if (!window.speechSynthesis) {
+    setVoiceStatus("Read-aloud is not supported in this browser. Open the app in Microsoft Edge to use Microsoft voices.");
+    return;
+  }
+  const question = state.questions.find((item) => item.id === questionId);
+  if (!question) return;
+  stopSpeaking();
+  const voice = resolveVoice();
+  const revealed = Boolean(state.records[questionId]?.revealed);
+  const chunks = splitForSpeech(buildQuestionSpeech(question, revealed));
+  const token = ++state.speechToken;
+  state.speakingQuestionId = questionId;
+  renderAll();
+  setVoiceStatus(`Reading with ${voice ? voice.name : "your browser's default voice"}.`);
+  speakChunk(chunks, 0, token, voice);
+}
+
+function initVoiceReader() {
+  const select = document.getElementById("voice-select");
+  if (!select) return;
+  refreshVoiceOptions();
+  select.addEventListener("change", () => {
+    localStorage.setItem(VOICE_STORAGE_KEY, select.value);
+    stopSpeaking({ rerender: true });
+    const voice = resolveVoice();
+    setVoiceStatus(`Voice set to ${voice ? voice.name : "the browser default"}.`);
+  });
+  if (window.speechSynthesis) {
+    window.speechSynthesis.addEventListener?.("voiceschanged", refreshVoiceOptions);
+    [250, 1000, 2500].forEach((delay) => setTimeout(refreshVoiceOptions, delay));
+  }
 }
 
 function populateSystemFilter() {
@@ -295,6 +465,7 @@ function renderQuestionsStage(filtered) {
 function renderQuestionCard(question) {
   const record = state.records[question.id] || {};
   const revealed = Boolean(record.revealed);
+  const speaking = state.speakingQuestionId === question.id;
   const selectedOption = record.selectedOption || null;
   const status = record.status || null;
   const statusLabels = { knew: "✓ Knew It", guessed: "? Guessed", wrong: "✗ Wrong" };
@@ -341,6 +512,7 @@ function renderQuestionCard(question) {
             <button type="button" class="mark-btn mark-wrong ${status === "wrong" ? "active" : ""}" data-action="mark-status" data-qid="${escapeHtml(question.id)}" data-status="wrong">✗ Wrong</button>
           </div>
           <button type="button" class="btn-reveal-toggle" data-action="toggle-reveal" data-qid="${escapeHtml(question.id)}">${revealed ? "🙈 Cover Answer Key" : "👁️ Check Answer & Rationales"}</button>
+          <button type="button" class="btn-reveal-toggle btn-voice" data-action="read-question" data-qid="${escapeHtml(question.id)}" aria-pressed="${speaking}" title="Read the question and options aloud. When the answer is showing, the correct answer and rationales are read too.">${speaking ? "⏹ Stop Reading" : "🔊 Read Aloud"}</button>
           ${selectedOption ? `<button type="button" class="btn-reveal-toggle" data-action="retry-question" data-qid="${escapeHtml(question.id)}">↻ Answer Again</button>` : ""}
         </div>
       </div>
@@ -454,6 +626,7 @@ function endBreakSession() {
 function navigateTo(index) {
   const filtered = getFilteredQuestions();
   if (index < 0 || index >= filtered.length) return;
+  stopSpeaking();
   state.currentIndex = index;
   resetQuestionPacer();
   renderAll();
@@ -461,6 +634,7 @@ function navigateTo(index) {
 }
 
 function setStatusFilter(status) {
+  stopSpeaking();
   state.activeStatus = status;
   state.currentIndex = 0;
   document.querySelectorAll(".filter-pill").forEach((pill) => {
@@ -471,6 +645,7 @@ function setStatusFilter(status) {
 }
 
 function setViewMode(mode) {
+  stopSpeaking();
   state.viewMode = mode;
   document.getElementById("view-single-btn").classList.toggle("active", mode === "single");
   document.getElementById("view-two-col-btn").classList.toggle("active", mode === "two-col");
@@ -523,6 +698,7 @@ function bindEvents() {
     if (!button) return;
     const questionId = button.dataset.qid;
     if (button.dataset.action === "pick-option") pickOption(questionId, Number(button.dataset.opt));
+    if (button.dataset.action === "read-question") toggleReadQuestion(questionId);
     if (button.dataset.action === "mark-status") updateRecord(questionId, { status: button.dataset.status });
     if (button.dataset.action === "retry-question") {
       updateRecord(questionId, { selectedOption: null, revealed: false });
@@ -548,6 +724,7 @@ function bindEvents() {
 
   document.querySelectorAll(".block-tab").forEach((tab) => {
     tab.addEventListener("click", () => {
+      stopSpeaking();
       document.querySelectorAll(".block-tab").forEach((item) => item.classList.remove("active"));
       tab.classList.add("active");
       state.activeBlock = tab.dataset.block;
@@ -565,6 +742,7 @@ function bindEvents() {
   });
 
   document.getElementById("system-filter-select").addEventListener("change", (event) => {
+    stopSpeaking();
     state.activeSystem = event.target.value;
     state.currentIndex = 0;
     renderAll();
