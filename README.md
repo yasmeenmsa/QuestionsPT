@@ -15,7 +15,7 @@ node scripts/send-telegram-voice.js --list-chats      # find the chat that start
 node scripts/send-telegram-voice.js --exam "PTEXAM ONE" --from 1 --to 10
 ```
 
-The bot can only message a chat that has started it, so open the bot in Telegram and press Start first. Options: `--limit`, `--reveal` (include the answer and rationales), `--dry-run` (generate audio only, in `.telegram-voice/`), and `TELEGRAM_CHAT_ID` to skip chat discovery. Sent questions are tracked in `.telegram-sent.json`; both paths are git-ignored.
+The bot can only message a chat that has started it, so open the bot in Telegram and press Start first. Options: `--limit`, `--answer-only` (read the question, then only the correct answer and why it is right), `--reveal` (include the answer and all four rationales), `--dry-run` (generate audio only, in `.telegram-voice/`), and `TELEGRAM_CHAT_ID` to skip chat discovery. Sent questions are tracked in `.telegram-sent.json`; both paths are git-ignored.
 
 ## Run locally or on your server
 

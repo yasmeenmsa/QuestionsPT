@@ -30,6 +30,9 @@ const toNumber = Number(option("to", "0")) || Infinity;
 const dryRun = flag("dry-run");
 const listChatsOnly = flag("list-chats");
 const reveal = flag("reveal");
+// Reads the stem and options, then only the correct answer and why that option is right.
+const answerOnly = flag("answer-only");
+const mode = answerOnly ? "answer" : reveal ? "revealed" : "stem";
 
 if (!TOKEN) {
   console.error("Set TELEGRAM_BOT_TOKEN in the environment. Never commit the token.");
@@ -75,7 +78,12 @@ async function discoverChat() {
 function buildText(question) {
   const lines = [`${question.exam || "Exam"} question ${question.number}.`, question.stem];
   question.options.forEach((option, index) => lines.push(`Option ${index + 1}. ${option}`));
-  if (reveal) {
+  const correctIndex = question.correctAnswer - 1;
+  if (answerOnly) {
+    lines.push(`The correct answer is option ${question.correctAnswer}: ${question.options[correctIndex]}.`);
+    const why = question.rationales?.[correctIndex] || question.oneLineFact || question.overview;
+    if (why) lines.push(`Why it is right. ${why}`);
+  } else if (reveal) {
     lines.push(`Correct answer: option ${question.correctAnswer}, ${question.options[question.correctAnswer - 1]}.`);
     if (question.overview) lines.push(question.overview);
     if (question.rationales?.length) {
@@ -115,9 +123,10 @@ async function main() {
 
   let count = 0;
   for (const question of batch) {
-    const key = `${question.id}:${reveal ? "revealed" : "stem"}`;
+    const key = `${question.id}:${mode}`;
     if (sent[key]) continue;
-    const base = join(CACHE_DIR, `${question.id}${reveal ? "-revealed" : ""}`);
+    const suffix = mode === "stem" ? "" : `-${mode}`;
+    const base = join(CACHE_DIR, `${question.id}${suffix}`);
     const ogg = await synthesize(buildText(question), base);
     if (dryRun) {
       console.log(`[dry-run] ${question.id} -> ${ogg}`);
