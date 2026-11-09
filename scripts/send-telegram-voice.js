@@ -141,7 +141,9 @@ async function main() {
   if (!chatId) return;
 
   const suffix = mode === "stem" ? "" : `-${mode}`;
-  const pending = batch.filter((question) => !sent[`${question.id}:${mode}`]);
+  // Ledger keys include the chat, so the same questions can be delivered to a second destination.
+  const keyFor = (question) => `${chatId}:${question.id}:${mode}`;
+  const pending = batch.filter((question) => !sent[keyFor(question)]);
   const pathOf = (question) => join(CACHE_DIR, `${question.id}${suffix}`);
   if (!pending.length) {
     console.log("Everything in this range has already been sent.");
@@ -163,7 +165,7 @@ async function main() {
 
   let count = 0;
   for (const question of pending) {
-    const key = `${question.id}:${mode}`;
+    const key = keyFor(question);
     const ogg = `${pathOf(question)}.ogg`;
     const form = new FormData();
     form.set("chat_id", String(chatId));
