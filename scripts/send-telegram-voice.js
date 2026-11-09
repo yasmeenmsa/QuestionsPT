@@ -32,6 +32,9 @@ const listChatsOnly = flag("list-chats");
 const reveal = flag("reveal");
 // Reads the stem and options, then only the correct answer and why that option is right.
 const answerOnly = flag("answer-only");
+// Optional opening text message, so the channel has context before the voice notes start.
+const intro = args.includes("--intro") ? option("intro", "Hi! This is the source builder for these questions.") : null;
+const introOnly = flag("intro-only");
 const mode = answerOnly ? "answer" : reveal ? "revealed" : "stem";
 
 if (!TOKEN) {
@@ -139,6 +142,18 @@ async function main() {
   const sent = existsSync(STATE_PATH) ? JSON.parse(readFileSync(STATE_PATH, "utf8")) : {};
   const chatId = dryRun ? "dry-run" : await discoverChat();
   if (!chatId) return;
+
+  if (intro) {
+    if (dryRun) console.log(`[dry-run] intro: ${intro}`);
+    else {
+      const form = new FormData();
+      form.set("chat_id", String(chatId));
+      form.set("text", intro);
+      await telegram("sendMessage", form);
+      console.log(`intro sent to ${chatId}`);
+    }
+    if (introOnly) return;
+  }
 
   const suffix = mode === "stem" ? "" : `-${mode}`;
   // Ledger keys include the chat, so the same questions can be delivered to a second destination.
