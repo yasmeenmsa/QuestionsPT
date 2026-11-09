@@ -2,6 +2,22 @@
 
 Mobile-friendly physiotherapy MCQ study app with hidden answer keys, confidence marking, review timers, weak-spot drills, and saved progress.
 
+**Read aloud:** each question card has a 🔊 Read Aloud button that speaks the stem and options, plus the correct answer and rationales once the key is revealed. A voice picker next to the exam filter defaults to Microsoft's **en-GB-SoniaNeural** voice, lists Microsoft voices first (Edge's online/natural voices rank highest), and falls back to whatever the browser provides; the choice is remembered on that device.
+
+## Telegram voice notes
+
+`scripts/send-telegram-voice.js` reads the question bank and sends each question to a Telegram bot as a voice note spoken by Microsoft's **en-GB-SoniaNeural** voice.
+
+```bash
+pip install edge-tts            # plus ffmpeg on PATH
+export TELEGRAM_BOT_TOKEN=...   # never commit this
+node scripts/send-telegram-voice.js --list-chats      # find the chat that started the bot
+node scripts/send-telegram-voice.js --exam "PTEXAM ONE" --from 1 --to 10
+node scripts/send-telegram-voice.js --answer-only     # whole bank, answer and why it is right
+```
+
+The bot can only message a chat that has started it, so press Start in a private chat first. For a channel, add the bot as an administrator with post permission and set `TELEGRAM_CHAT_ID` to the channel id (a negative number starting `-100`). Options: `--limit`, `--answer-only` (read the question, then only the correct answer and why it is right), `--reveal` (include the answer and all four rationales), `--dry-run` (generate audio only, in `.telegram-voice/`), `--intro "text"` / `--intro-only` (post a message before the batch or on its own), and `TELEGRAM_CHAT_ID` to skip chat discovery. Sent questions are tracked per chat in `.telegram-sent.json`; both paths are git-ignored.
+
 ## Run locally or on your server
 
 Requires [Bun](https://bun.sh/). An 8 GB RAM server is more than sufficient.
