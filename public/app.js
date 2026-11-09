@@ -200,11 +200,16 @@ function isMicrosoftVoice(voice) {
   return /^microsoft/i.test(voice.name);
 }
 
+// The requested default is Microsoft's en-GB-SoniaNeural voice.
+const PREFERRED_VOICE = /sonia neura[l]?|sonianeural/i;
+
 function voiceRank(voice) {
   let score = 0;
+  if (PREFERRED_VOICE.test(voice.name)) score += 16;
   if (/natural|online/i.test(voice.name)) score += 4;
+  if (/^en[-_]gb/i.test(voice.lang)) score += 3;
   if (/^en[-_]us/i.test(voice.lang)) score += 2;
-  if (/aria|jenny|michelle|monica|ava|andrew|brian|emma|guy/i.test(voice.name)) score += 1;
+  if (/aria|jenny|michelle|monica|ava|andrew|brian|emma|guy|sonia|ryan|libby|thomas/i.test(voice.name)) score += 1;
   return score;
 }
 
@@ -222,7 +227,11 @@ function resolveVoice() {
     const chosen = voices.find((voice) => voice.name === saved);
     if (chosen) return chosen;
   }
-  return pickBestMicrosoftVoice(voices) || voices.find((voice) => /^en[-_]/i.test(voice.lang)) || voices[0] || null;
+  return voices.find((voice) => PREFERRED_VOICE.test(voice.name))
+    || pickBestMicrosoftVoice(voices)
+    || voices.find((voice) => /^en[-_]/i.test(voice.lang))
+    || voices[0]
+    || null;
 }
 
 function refreshVoiceOptions() {
@@ -248,7 +257,7 @@ function refreshVoiceOptions() {
   const microsoft = state.voices.filter(isMicrosoftVoice);
   const others = state.voices.filter((voice) => !isMicrosoftVoice(voice));
   const optionHtml = (voice) => `<option value="${escapeHtml(voice.name)}">${escapeHtml(voice.name)} — ${escapeHtml(voice.lang)}</option>`;
-  const autoLabel = microsoft.length ? "Automatic (best Microsoft voice)" : "Automatic (best available voice)";
+  const autoLabel = microsoft.length ? "Automatic (Sonia, en-GB)" : "Automatic (best available voice)";
   let html = `<option value="auto">${autoLabel}</option>`;
   if (microsoft.length) html += `<optgroup label="Microsoft voices">${microsoft.map(optionHtml).join("")}</optgroup>`;
   if (others.length) html += `<optgroup label="${microsoft.length ? "Other voices" : "Available voices"}">${others.map(optionHtml).join("")}</optgroup>`;
