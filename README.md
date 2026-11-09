@@ -13,9 +13,10 @@ pip install edge-tts            # plus ffmpeg on PATH
 export TELEGRAM_BOT_TOKEN=...   # never commit this
 node scripts/send-telegram-voice.js --list-chats      # find the chat that started the bot
 node scripts/send-telegram-voice.js --exam "PTEXAM ONE" --from 1 --to 10
+node scripts/send-telegram-voice.js --answer-only     # whole bank, answer and why it is right
 ```
 
-The bot can only message a chat that has started it, so open the bot in Telegram and press Start first. Options: `--limit`, `--answer-only` (read the question, then only the correct answer and why it is right), `--reveal` (include the answer and all four rationales), `--dry-run` (generate audio only, in `.telegram-voice/`), and `TELEGRAM_CHAT_ID` to skip chat discovery. Sent questions are tracked in `.telegram-sent.json`; both paths are git-ignored.
+The bot can only message a chat that has started it, so press Start in a private chat first. For a channel, add the bot as an administrator with post permission and set `TELEGRAM_CHAT_ID` to the channel id (a negative number starting `-100`). Options: `--limit`, `--answer-only` (read the question, then only the correct answer and why it is right), `--reveal` (include the answer and all four rationales), `--dry-run` (generate audio only, in `.telegram-voice/`), `--intro "text"` / `--intro-only` (post a message before the batch or on its own), and `TELEGRAM_CHAT_ID` to skip chat discovery. Sent questions are tracked per chat in `.telegram-sent.json`; both paths are git-ignored.
 
 ## Run locally or on your server
 
